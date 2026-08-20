@@ -1,0 +1,4 @@
+interface:
+  display_name: "Stock Analysis Review"
+  short_description: "Audit grounding, provider parity, and release evidence"
+  default_prompt: "Use $stock-analysis-review to review the current change without editing and give an evidence-backed readiness verdict."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Stock Analysis Rebuild"
+  short_description: "Build the grounded multi-provider Python rebuild"
+  default_prompt: "Use $stock-analysis-rebuild to implement the next dependency-complete rebuild slice with evidence and verification."

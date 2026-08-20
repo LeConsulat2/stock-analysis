@@ -1,5 +1,7 @@
 .env
 env3/
+__pycache__/
+*.py[cod]
 
-reports/
+
 thepublic-example.txt
