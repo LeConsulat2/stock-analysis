@@ -2,22 +2,20 @@
 
 ## Project Structure & Direction
 
-This repository is rebuilding its experimental CrewAI stock-analysis scripts into a lean, tool-grounded application. Treat `.claude/NewStart.md` as the design reference. Existing `o3-final.py` and root-level `*.ipynb` files are legacy experiments and must remain untouched.
+The active rebuild is planning-only. Treat `CLAUDE.md` and `.claude/NewStart.md` as its sources of truth. Seven CrewAI/LangChain experiments live in `archive/`; keep them untouched as design references. Legacy dependencies are absent from the trimmed `requirements.txt`.
 
-Keep the rebuild flat at the repository root:
+New modules will stay at the repository root:
 
-- `config.py`: analysis and provider configuration.
-- `llm.py`: provider-neutral interface plus Anthropic/OpenAI adapters.
-- `data_tools.py`: defensive, JSON-serializable market-data tools.
-- `agents.py`: bounded multi-round tool-calling loop and analyst roles.
-- `report.py`: Markdown report generation.
+- `config.py`: analysis and provider dataclasses.
+- `llm.py`: common client interface and four provider adapters.
+- `data_tools.py`: compact, grounded market-data tools.
+- `agents.py`: analyst roles and bounded tool-calling loop.
+- `report.py`: Markdown rendering.
 - `main.py`: sequential CLI orchestration.
 
-Generated files belong in `reports/` as `<TICKER>_analysis_<YYYYMMDD_HHMMSS>.md` and should not be newly committed.
+Generated output belongs in ignored `reports/` as `<TICKER>_analysis_<YYYYMMDD_HHMMSS>.md`.
 
 ## Setup, Run, and Development Commands
-
-Use the Windows virtual environment:
 
 ```powershell
 .\env\Scripts\Activate.ps1
@@ -26,20 +24,22 @@ python -m py_compile config.py llm.py data_tools.py agents.py report.py main.py
 python main.py 005930.KS
 ```
 
-The rebuild is currently planned but not implemented, so the last two commands apply as files land. Use `python o3-final.py` only to inspect legacy behavior. The completed CLI should accept one or more ticker overrides and otherwise analyze the six-symbol default roster.
+The first two commands apply now; the others apply after rebuild files land. There is no build step. The finished CLI should accept ticker overrides and default to `005930.KS`, `066570.KS`, `GOOGL`, `META`, `MSFT`, and `NVDA`. Do not use `archive/o3-final.py` as the active entry point.
 
-## Architecture and Coding Conventions
+## Architecture & Coding Conventions
 
-Follow PEP 8, four-space indentation, `snake_case` functions, `PascalCase` classes, and `UPPER_CASE` constants. Add type hints to public interfaces and centralize tunables in dataclasses. Do not add CrewAI, LangChain, vector databases, async execution, or memory/RAG layers. Agents must dynamically request real tools; do not prefetch data or let prompts invent unsupported facts. Keep tool results compact and JSON serializable, catch unstable `yfinance` failures, and return `{"error": ...}` payloads.
+Follow PEP 8 with four-space indentation. Use `snake_case` for functions, `PascalCase` for classes, and `UPPER_CASE` for constants. Type public interfaces and centralize tunables in dataclasses. Support `claude`, `openai`, `google`, and `local` through native SDK adapters behind one `LLMClient`; do not introduce CrewAI, LangChain, LiteLLM, vector databases, async execution, or memory/RAG in v1.
+
+Agents must request real tools dynamically before making claims. Keep tool responses small and JSON-serializable. Wrap unstable `yfinance` access and return `{"error": ...}` instead of crashing. Local models use Ollama's OpenAI-compatible endpoint.
 
 ## Testing Guidelines
 
-No automated suite or coverage threshold exists yet. Add tests under `tests/` as `test_*.py`, mocking network and LLM boundaries. Before integration, smoke-test every data tool with one KRX and one US ticker. Then run `python main.py 005930.KS` with both `LLM_PROVIDER=claude` and `LLM_PROVIDER=openai`; confirm tool-call traces, grounded synthesis, and report creation. Finally test the default roster.
+No automated suite or coverage threshold exists yet. Add `tests/test_*.py` files and mock network/LLM boundaries. Smoke-test each data tool with one KRX and one US ticker. Run a single-ticker workflow through all four providers, verify visible tool-call round trips and grounded synthesis, then test the default roster and generated report. For `local`, confirm `ollama serve` and the exact installed model tag first.
 
-## Commits and Pull Requests
+## Commits & Pull Requests
 
-History uses short but inconsistent subjects. Prefer imperative, scoped messages such as `Add Anthropic tool-call adapter`. Pull requests should describe the role or data flow changed, validation performed, provider(s) tested, and known data-source limitations. Include a report excerpt when output formatting or recommendation behavior changes.
+Recent subjects are short but inconsistent. Use imperative, scoped messages such as `Add Google tool-call adapter`. Pull requests should describe data-flow changes, validation, providers tested, and data-source limitations. Include a report excerpt for recommendation or formatting changes.
 
-## Security and Configuration
+## Security & Configuration
 
-Keep `OPENAI_API_KEY` and `ANTHROPIC_API_KEY` in untracked `.env` files; only the selected provider's key is required at runtime. Never commit credentials or sensitive financial data. Treat recommendations as research output, not financial advice.
+Keep `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, and `GOOGLE_API_KEY` in untracked `.env`; only the selected hosted provider needs its key. Local Ollama needs no key. Never commit credentials or sensitive financial data, and label recommendations as research rather than financial advice.

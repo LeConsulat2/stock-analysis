@@ -6,8 +6,8 @@ started.
 
 ## Context
 
-The repo (`o3-final.py` + 6 notebooks) is a set of LLM-generated experiments comparing CrewAI-based
-multi-agent stock analysis. Two problems this rebuild fixes:
+The repo (`archive/o3-final.py` + 6 notebooks under `archive/`) is a set of LLM-generated experiments
+comparing CrewAI-based multi-agent stock analysis. Two problems this rebuild fixes:
 
 1. **Dependency bloat.** `requirements.txt` has 255 packages; the code only uses ~10 of them. Much of the
    bloat isn't stray copy-paste — CrewAI itself transitively pulls in `embedchain`, `chromadb`,
@@ -19,28 +19,41 @@ multi-agent stock analysis. Two problems this rebuild fixes:
    stubbed (hardcoded `0.7`/`0.6`). There's no forward-looking/forecast component anywhere in the repo —
    everything describes the present, nothing reasons about what's next.
 
-Goal: replace CrewAI/langchain with a small hand-rolled agent loop using native tool-calling (Anthropic and
-OpenAI, pluggable), where every analyst actually calls real data-fetching tools before writing anything, plus
-a new forward-looking/forecast role. Target universe: Samsung Electronics (`005930.KS`), LG Electronics
-(`066570.KS` — matches the ticker used in every existing `reports/*.md` file), Google (`GOOGL`), Meta
-(`META`), Microsoft (`MSFT`), NVIDIA (`NVDA`).
+Goal: replace CrewAI/langchain with a small hand-rolled agent loop using native tool-calling — pluggable across
+Anthropic, OpenAI, Google Gemini, and a local model (e.g. Gemma 4) served through Ollama — where every analyst
+actually calls real data-fetching tools before writing anything, plus a new forward-looking/forecast role.
+Target universe: Samsung Electronics (`005930.KS`), LG Electronics (`066570.KS` — matches the ticker used in
+every existing `reports/*.md` file), Google (`GOOGL`), Meta (`META`), Microsoft (`MSFT`), NVIDIA (`NVDA`).
 
 Confirmed with user: dynamic multi-round tool-calling per agent (not prefetch-and-narrate), GOOGL over GOOG,
-and the existing `o3-final.py`/notebooks are left untouched — this is new files alongside them, not a rewrite
-in place.
+no litellm (after researching the March 2026 PyPI supply-chain compromise of the `litellm` package plus its
+separate proxy-server CVEs — native SDK per provider instead, dispatched by a plain `provider` string), and
+four providers instead of two: Anthropic, OpenAI, Google Gemini, and a local model via Ollama. The existing
+`o3-final.py`/notebooks have since been physically moved into `archive/` by the user (content untouched, just
+relocated) — new rebuild files still land flat at the repo root, not inside `archive/`.
 
 ## New files (flat, no package directory — matches the repo's existing flat layout)
 
 - `config.py` — `AnalysisConfig` dataclass (period, interval, MA windows, RSI period, VaR confidence — same
-  shape as the existing one in `o3-final.py`) + `LLMConfig` (provider: `"claude"` | `"openai"`, model name,
-  read from `.env` / env vars, default provider `claude`).
+  shape as the existing one in `o3-final.py`) + `LLMConfig` (provider: `"claude"` | `"openai"` | `"google"` |
+  `"local"`, model name, read from `.env` / env vars, default provider `claude`).
 - `llm.py` — provider-agnostic chat+tool-calling client. One small `LLMClient` interface with a single method
   `send(system: str, messages: list, tools: list[ToolSpec]) -> LLMResponse` (`LLMResponse` = either
-  assistant text, or one-or-more tool calls to execute). Two implementations:
+  assistant text, or one-or-more tool calls to execute). Four implementations:
   - `AnthropicClient` — wraps `anthropic.Anthropic().messages.create(..., tools=[...])`, translates
     `tool_use` content blocks to the internal tool-call representation, appends `tool_result` blocks back in.
   - `OpenAIClient` — wraps `openai.OpenAI().chat.completions.create(..., tools=[...])`, translates
     `tool_calls` similarly.
+  - `GoogleClient` — wraps `google.genai.Client().models.generate_content(..., config=types.
+    GenerateContentConfig(tools=[...]))` (the `google-genai` package — `google-generativeai` is deprecated,
+    sunset Aug 2025). Auths via a plain `GOOGLE_API_KEY` (Gemini Developer API), not a GCP service
+    account/Vertex AI setup. Default model a Gemini Flash variant.
+  - `LocalClient` — **not a new SDK**: reuses `OpenAIClient`'s implementation with
+    `base_url="http://localhost:11434/v1"` and a dummy `api_key`, pointed at a locally-running
+    `ollama serve`. Confirmed Ollama's OpenAI-compatible endpoint returns proper `tool_calls`/
+    `finish_reason: "tool_calls"` for Gemma 4, so no special-casing is needed in `agents.py`'s tool loop for
+    this provider. The target model tag (e.g. a Gemma 4 tag) must already be pulled locally (`ollama pull
+    <tag>`) before use — confirm the exact tag with `ollama list` rather than assuming one.
   - A `get_llm_client(config: LLMConfig) -> LLMClient` factory picks the implementation.
 - `data_tools.py` — the real, grounded data functions (plain Python, JSON-schema-described for tool-calling,
   not CrewAI `BaseTool` subclasses). Each returns a small JSON-serializable summary (not raw CSV dumps like
@@ -89,23 +102,32 @@ in place.
   process model to reason about), then the synthesizer, then writes the report. Prints the final call + report
   path per ticker, matching the existing `__main__` block's console output style.
 - `requirements.txt` — trimmed to what's actually imported: `yfinance`, `pandas`, `numpy`, `pandas_ta`,
-  `anthropic`, `openai`, `python-dotenv`. (Drops `crewai`, `crewai-tools`, every `langchain*` package, and the
-  ~240 unrelated packages — vector DBs, `auth0-python`, `kubernetes`, `snowflake-connector-python`, `docker`,
-  `textblob`, `plotly`, `scrapegraph_py`, `spider-client`, `serpapi`, `selenium`, `pytube`, `pyvis`, etc. —
-  none of which are referenced by any code in the repo, old or new. Verified `plotly`/`textblob` are imported
-  but never actually used in `o3-final.py` either, so nothing currently working depends on them.)
-- `.env` — needs both `OPENAI_API_KEY` and `ANTHROPIC_API_KEY` present (only the one matching the selected
-  `LLM_PROVIDER` is required at runtime, but supporting both means either can be set).
+  `anthropic`, `openai`, `google-genai`, `python-dotenv`. (Drops `crewai`, `crewai-tools`, every `langchain*`
+  package, `litellm` (never added — see the no-litellm decision above), and the ~240 unrelated packages —
+  vector DBs, `auth0-python`, `kubernetes`, `snowflake-connector-python`, `docker`, `textblob`, `plotly`,
+  `scrapegraph_py`, `spider-client`, `serpapi`, `selenium`, `pytube`, `pyvis`, etc. — none of which are
+  referenced by any code in the repo, old or new. Verified `plotly`/`textblob` are imported but never actually
+  used in `o3-final.py` either, so nothing currently working depends on them. The local/Ollama provider needs
+  no additional package — it reuses `openai`.) This file has already been applied for real (not just
+  planned) even though the code that will import these packages doesn't exist yet.
+- `.env` — needs `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, and `GOOGLE_API_KEY` present (only the one matching
+  the selected `LLM_PROVIDER` is required at runtime, but supporting all three means any can be set). The
+  local provider needs no API key, but does need `ollama serve` running with the target model already pulled.
 
 ## Not doing (kept out of scope for this pass)
 
-- No CrewAI, no LangChain, no vector DB/memory layer.
+- No CrewAI, no LangChain, no vector DB/memory layer, and no `litellm` (see the no-litellm decision above —
+  four native SDK-backed clients instead of one routing layer).
 - No async/concurrency — analysts run sequentially per ticker. Straightforward to parallelize later with
   `asyncio.gather` once the sequential version is proven correct; adding it now would be premature given the
   explicit goal of cutting complexity.
-- Old files (`o3-final.py`, all 6 notebooks) are left completely untouched — nothing is deleted or moved.
-- `CLAUDE.md` gets a short addition pointing at `main.py` as the new reference entry point, without rewriting
-  the existing sections describing the legacy files (still accurate, still worth keeping for context).
+- Old files (`o3-final.py`, all 6 notebooks) are content-untouched — nothing in them was edited — but the user
+  has since physically relocated them into `archive/` (this happened outside this rebuild's scope; noted here
+  so this doc doesn't go stale against the actual repo layout).
+- `CLAUDE.md` has been updated for real: the archive move changed every legacy file path it referenced, so it
+  got more than the originally-planned "short addition" — its Architecture/Notebooks sections now describe
+  the `archive/` designs explicitly as archived/reference-only, with paths corrected, plus a note that
+  `requirements.txt` no longer installs what's needed to run them.
 
 ## Verification (once implementation starts)
 
@@ -113,8 +135,11 @@ in place.
   symbol, one US symbol) before wiring it into the agent loop — some yfinance fields
   (`analyst_price_targets`, `recommendations`) are undocumented/scraped and worth confirming return real data
   for both markets rather than assuming from docs.
-- Run `python main.py 005930.KS` end-to-end with each provider (`LLM_PROVIDER=claude` and
-  `LLM_PROVIDER=openai`) and confirm: tool calls actually fire (visible via a printed trace of each tool
-  call + args), the synthesizer's final call references specifics from the analysts' output (not generic
-  boilerplate), and a report lands in `reports/`.
+- Run `python main.py 005930.KS` end-to-end with each provider (`LLM_PROVIDER=claude`, `LLM_PROVIDER=openai`,
+  `LLM_PROVIDER=google`, `LLM_PROVIDER=local`) and confirm: tool calls actually fire (visible via a printed
+  trace of each tool call + args), the synthesizer's final call references specifics from the analysts'
+  output (not generic boilerplate), and a report lands in `reports/`. For `local`, confirm `ollama serve` is
+  running and the target model tag is pulled before the run, and specifically check that tool-call turns
+  actually round-trip (Gemma 4 tool-calling through Ollama is newer/less battle-tested than the three hosted
+  APIs — worth confirming rather than assuming from the docs).
 - Run the default multi-ticker roster end-to-end once single-ticker works.
