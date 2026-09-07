@@ -1,0 +1,7 @@
+yfinance
+pandas
+openai
+anthropic
+google-genai
+python-dotenv
+tzdata

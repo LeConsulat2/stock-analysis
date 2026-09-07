@@ -1,0 +1,3398 @@
+{
+  "schema_version": 1,
+  "demo": true,
+  "generated_at": "2026-09-07T21:33:45.745238+00:00",
+  "display_timezone": "Pacific/Auckland",
+  "horizon_years": 3,
+  "requests": 0,
+  "companies": [
+    {
+      "instrument": {
+        "key": "acushnet",
+        "name": "Acushnet (Titleist / FootJoy)",
+        "ticker": "GOLF",
+        "currency": "USD",
+        "timezone": "America/New_York",
+        "close_hour": 16,
+        "close_minute": 0,
+        "identity_terms": [
+          "acushnet"
+        ],
+        "topics": [
+          "Titleist golf demand",
+          "golf equipment tariffs"
+        ],
+        "related": [
+          "CALY"
+        ],
+        "note": "Titleist and FootJoy are brands; GOLF is the parent equity."
+      },
+      "snapshot": {
+        "id": "acushnet:prices",
+        "kind": "prices",
+        "subject": "acushnet",
+        "source": "FICTIONAL DEMO DATA",
+        "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+        "as_of": "2026-09-07",
+        "data": {
+          "close": 100.0,
+          "session_date": "2026-09-07",
+          "change_pct": 0.0,
+          "change_basis": "fictional adjusted daily change",
+          "price_basis": "fictional completed daily close",
+          "currency": "USD",
+          "age_days": 0,
+          "identity_verified": true,
+          "resolved_name": "FICTIONAL Acushnet (Titleist / FootJoy)"
+        },
+        "warnings": [],
+        "error": null
+      },
+      "analysts": [
+        {
+          "role": "fundamental",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: compare earnings with cash after equipment spending before assuming growth benefits shareholders.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "acushnet:prices",
+                  "acushnet:fundamentals"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "acushnet:fundamentals",
+            "acushnet:prices"
+          ],
+          "error": null
+        },
+        {
+          "role": "news",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: the supplied demand headline sounds positive, but it does not establish higher margins or a share-price rise.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "acushnet:news"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "acushnet:news"
+          ],
+          "error": null
+        },
+        {
+          "role": "ecosystem",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: investigate whether capacity expansion and competing supply offset stronger demand. Related tickers remain research leads.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "acushnet:ecosystem"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "acushnet:ecosystem"
+          ],
+          "error": null
+        }
+      ],
+      "skeptic": {
+        "role": "skeptic",
+        "provider": "demo",
+        "model": "scripted-fiction",
+        "status": "complete",
+        "content": {
+          "summary": "FICTIONAL scripted approval: the software demonstrates a review gate; no real company thesis has been verified.",
+          "claims": [
+            {
+              "text": "This fixture provides invented figures and news for demonstrating the flow.",
+              "evidence_ids": [
+                "acushnet:prices",
+                "acushnet:fundamentals",
+                "acushnet:news",
+                "acushnet:ecosystem",
+                "acushnet:valuation:21a942eca5"
+              ]
+            }
+          ],
+          "risks": [
+            "No real research was performed; never act on this example."
+          ],
+          "stance": "ABSTAIN",
+          "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+          "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+          "valuation_id": null,
+          "approved": true
+        },
+        "evidence_ids": [
+          "acushnet:ecosystem",
+          "acushnet:fundamentals",
+          "acushnet:news",
+          "acushnet:prices",
+          "acushnet:valuation:21a942eca5"
+        ],
+        "error": null
+      },
+      "decision": {
+        "role": "decision",
+        "provider": "demo",
+        "model": "scripted-fiction",
+        "status": "complete",
+        "content": {
+          "summary": "FICTIONAL example: the stance below follows an assumed valuation, and changes if those assumptions fail.",
+          "claims": [
+            {
+              "text": "This fixture provides invented figures and news for demonstrating the flow.",
+              "evidence_ids": [
+                "acushnet:prices",
+                "acushnet:fundamentals",
+                "acushnet:news",
+                "acushnet:ecosystem",
+                "acushnet:valuation:21a942eca5"
+              ]
+            }
+          ],
+          "risks": [
+            "No real research was performed; never act on this example."
+          ],
+          "stance": "BUY",
+          "rationale": "DEMO BUY: conditional present value is 133.57 USD under the stated growth, exit multiple and required return. This calculation is sensitive to its assumptions and excludes dividends/dilution.",
+          "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+          "valuation_id": "acushnet:valuation:21a942eca5",
+          "approved": false
+        },
+        "evidence_ids": [
+          "acushnet:ecosystem",
+          "acushnet:fundamentals",
+          "acushnet:news",
+          "acushnet:prices",
+          "acushnet:valuation:21a942eca5"
+        ],
+        "error": null
+      },
+      "published_action": "BUY",
+      "blocks": [],
+      "evidence": [
+        {
+          "id": "acushnet:prices",
+          "kind": "prices",
+          "subject": "acushnet",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2026-09-07",
+          "data": {
+            "close": 100.0,
+            "session_date": "2026-09-07",
+            "change_pct": 0.0,
+            "change_basis": "fictional adjusted daily change",
+            "price_basis": "fictional completed daily close",
+            "currency": "USD",
+            "age_days": 0,
+            "identity_verified": true,
+            "resolved_name": "FICTIONAL Acushnet (Titleist / FootJoy)"
+          },
+          "warnings": [],
+          "error": null
+        },
+        {
+          "id": "acushnet:fundamentals",
+          "kind": "fundamentals",
+          "subject": "acushnet",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2025-12-31",
+          "data": {
+            "period_end": "2025-12-31",
+            "period_type": "annual",
+            "currency": "USD",
+            "revenue": 1000000.0,
+            "operating_income": 200000.0,
+            "net_income": 150000.0,
+            "diluted_eps": 5.0,
+            "operating_cash_flow": 180000.0,
+            "capital_expenditure": -40000.0,
+            "source_grade": "invented teaching fixture"
+          },
+          "warnings": [
+            "Annual aggregator data; verify critical facts against original filings."
+          ],
+          "error": null
+        },
+        {
+          "id": "acushnet:news",
+          "kind": "news",
+          "subject": "acushnet",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {
+            "articles": [
+              {
+                "title": "FICTIONAL: Example demand and capacity update",
+                "summary": "Invented news to demonstrate the report format.",
+                "url": "https://example.com/fictional-news",
+                "published_at": "2026-09-07T21:33:45.745238+00:00",
+                "publisher": "Demo only",
+                "coverage": "fictional summary"
+              }
+            ],
+            "research_leads": [
+              "CALY"
+            ],
+            "relationship_status": "hypotheses, not verified contracts",
+            "query_errors": []
+          },
+          "warnings": [
+            "Headlines/summaries only; relevance and causality require review."
+          ],
+          "error": null
+        },
+        {
+          "id": "acushnet:ecosystem",
+          "kind": "ecosystem",
+          "subject": "acushnet",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {
+            "articles": [
+              {
+                "title": "FICTIONAL: Example demand and capacity update",
+                "summary": "Invented news to demonstrate the report format.",
+                "url": "https://example.com/fictional-news",
+                "published_at": "2026-09-07T21:33:45.745238+00:00",
+                "publisher": "Demo only",
+                "coverage": "fictional summary"
+              }
+            ],
+            "research_leads": [
+              "CALY"
+            ],
+            "relationship_status": "hypotheses, not verified contracts",
+            "query_errors": []
+          },
+          "warnings": [
+            "Headlines/summaries only; relevance and causality require review."
+          ],
+          "error": null
+        },
+        {
+          "id": "acushnet:valuation:21a942eca5",
+          "kind": "valuation",
+          "subject": "acushnet",
+          "source": "Python conditional calculation",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2025-12-31",
+          "data": {
+            "inputs": {
+              "annual_growth": 0.14,
+              "exit_pe": 24,
+              "required_return": 0.1,
+              "assumption_reason": "FICTIONAL teaching assumptions; not company forecasts."
+            },
+            "input_evidence_id": "acushnet:fundamentals",
+            "annual_eps": 5.0,
+            "horizon_years": 3,
+            "future_price": 177.7853,
+            "present_value": 133.5727,
+            "currency": "USD",
+            "method": "EPS*(1+growth)^years*exit_PE/(1+required_return)^years",
+            "assumption_status": "model assumptions, not verified forecasts"
+          },
+          "warnings": [
+            "Simplified earnings multiple; no dividends, FX, or explicit dilution model.",
+            "Not a universal method: cyclical/negative-earnings firms may require abstention."
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "instrument": {
+        "key": "callaway",
+        "name": "Callaway Golf",
+        "ticker": "CALY",
+        "currency": "USD",
+        "timezone": "America/New_York",
+        "close_hour": 16,
+        "close_minute": 0,
+        "identity_terms": [
+          "callaway"
+        ],
+        "topics": [
+          "Callaway golf equipment",
+          "golf participation"
+        ],
+        "related": [
+          "GOLF"
+        ],
+        "note": "Use current CALY identity; do not assume historic MODG structure."
+      },
+      "snapshot": {
+        "id": "callaway:prices",
+        "kind": "prices",
+        "subject": "callaway",
+        "source": "FICTIONAL DEMO DATA",
+        "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+        "as_of": "2026-09-07",
+        "data": {
+          "close": 100.0,
+          "session_date": "2026-09-07",
+          "change_pct": 0.0,
+          "change_basis": "fictional adjusted daily change",
+          "price_basis": "fictional completed daily close",
+          "currency": "USD",
+          "age_days": 0,
+          "identity_verified": true,
+          "resolved_name": "FICTIONAL Callaway Golf"
+        },
+        "warnings": [],
+        "error": null
+      },
+      "analysts": [
+        {
+          "role": "fundamental",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: compare earnings with cash after equipment spending before assuming growth benefits shareholders.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "callaway:prices",
+                  "callaway:fundamentals"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "callaway:fundamentals",
+            "callaway:prices"
+          ],
+          "error": null
+        },
+        {
+          "role": "news",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: the supplied demand headline sounds positive, but it does not establish higher margins or a share-price rise.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "callaway:news"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "callaway:news"
+          ],
+          "error": null
+        },
+        {
+          "role": "ecosystem",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: investigate whether capacity expansion and competing supply offset stronger demand. Related tickers remain research leads.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "callaway:ecosystem"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "callaway:ecosystem"
+          ],
+          "error": null
+        }
+      ],
+      "skeptic": {
+        "role": "skeptic",
+        "provider": "demo",
+        "model": "scripted-fiction",
+        "status": "complete",
+        "content": {
+          "summary": "FICTIONAL scripted approval: the software demonstrates a review gate; no real company thesis has been verified.",
+          "claims": [
+            {
+              "text": "This fixture provides invented figures and news for demonstrating the flow.",
+              "evidence_ids": [
+                "callaway:prices",
+                "callaway:fundamentals",
+                "callaway:news",
+                "callaway:ecosystem",
+                "callaway:valuation:21a942eca5"
+              ]
+            }
+          ],
+          "risks": [
+            "No real research was performed; never act on this example."
+          ],
+          "stance": "ABSTAIN",
+          "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+          "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+          "valuation_id": null,
+          "approved": true
+        },
+        "evidence_ids": [
+          "callaway:ecosystem",
+          "callaway:fundamentals",
+          "callaway:news",
+          "callaway:prices",
+          "callaway:valuation:21a942eca5"
+        ],
+        "error": null
+      },
+      "decision": {
+        "role": "decision",
+        "provider": "demo",
+        "model": "scripted-fiction",
+        "status": "complete",
+        "content": {
+          "summary": "FICTIONAL example: the stance below follows an assumed valuation, and changes if those assumptions fail.",
+          "claims": [
+            {
+              "text": "This fixture provides invented figures and news for demonstrating the flow.",
+              "evidence_ids": [
+                "callaway:prices",
+                "callaway:fundamentals",
+                "callaway:news",
+                "callaway:ecosystem",
+                "callaway:valuation:21a942eca5"
+              ]
+            }
+          ],
+          "risks": [
+            "No real research was performed; never act on this example."
+          ],
+          "stance": "HOLD",
+          "rationale": "DEMO HOLD: conditional present value is 133.57 USD under the stated growth, exit multiple and required return. This calculation is sensitive to its assumptions and excludes dividends/dilution.",
+          "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+          "valuation_id": "callaway:valuation:21a942eca5",
+          "approved": false
+        },
+        "evidence_ids": [
+          "callaway:ecosystem",
+          "callaway:fundamentals",
+          "callaway:news",
+          "callaway:prices",
+          "callaway:valuation:21a942eca5"
+        ],
+        "error": null
+      },
+      "published_action": "HOLD",
+      "blocks": [],
+      "evidence": [
+        {
+          "id": "callaway:prices",
+          "kind": "prices",
+          "subject": "callaway",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2026-09-07",
+          "data": {
+            "close": 100.0,
+            "session_date": "2026-09-07",
+            "change_pct": 0.0,
+            "change_basis": "fictional adjusted daily change",
+            "price_basis": "fictional completed daily close",
+            "currency": "USD",
+            "age_days": 0,
+            "identity_verified": true,
+            "resolved_name": "FICTIONAL Callaway Golf"
+          },
+          "warnings": [],
+          "error": null
+        },
+        {
+          "id": "callaway:fundamentals",
+          "kind": "fundamentals",
+          "subject": "callaway",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2025-12-31",
+          "data": {
+            "period_end": "2025-12-31",
+            "period_type": "annual",
+            "currency": "USD",
+            "revenue": 1000000.0,
+            "operating_income": 200000.0,
+            "net_income": 150000.0,
+            "diluted_eps": 5.0,
+            "operating_cash_flow": 180000.0,
+            "capital_expenditure": -40000.0,
+            "source_grade": "invented teaching fixture"
+          },
+          "warnings": [
+            "Annual aggregator data; verify critical facts against original filings."
+          ],
+          "error": null
+        },
+        {
+          "id": "callaway:news",
+          "kind": "news",
+          "subject": "callaway",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {
+            "articles": [
+              {
+                "title": "FICTIONAL: Example demand and capacity update",
+                "summary": "Invented news to demonstrate the report format.",
+                "url": "https://example.com/fictional-news",
+                "published_at": "2026-09-07T21:33:45.745238+00:00",
+                "publisher": "Demo only",
+                "coverage": "fictional summary"
+              }
+            ],
+            "research_leads": [
+              "GOLF"
+            ],
+            "relationship_status": "hypotheses, not verified contracts",
+            "query_errors": []
+          },
+          "warnings": [
+            "Headlines/summaries only; relevance and causality require review."
+          ],
+          "error": null
+        },
+        {
+          "id": "callaway:ecosystem",
+          "kind": "ecosystem",
+          "subject": "callaway",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {
+            "articles": [
+              {
+                "title": "FICTIONAL: Example demand and capacity update",
+                "summary": "Invented news to demonstrate the report format.",
+                "url": "https://example.com/fictional-news",
+                "published_at": "2026-09-07T21:33:45.745238+00:00",
+                "publisher": "Demo only",
+                "coverage": "fictional summary"
+              }
+            ],
+            "research_leads": [
+              "GOLF"
+            ],
+            "relationship_status": "hypotheses, not verified contracts",
+            "query_errors": []
+          },
+          "warnings": [
+            "Headlines/summaries only; relevance and causality require review."
+          ],
+          "error": null
+        },
+        {
+          "id": "callaway:valuation:21a942eca5",
+          "kind": "valuation",
+          "subject": "callaway",
+          "source": "Python conditional calculation",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2025-12-31",
+          "data": {
+            "inputs": {
+              "annual_growth": 0.14,
+              "exit_pe": 24,
+              "required_return": 0.1,
+              "assumption_reason": "FICTIONAL teaching assumptions; not company forecasts."
+            },
+            "input_evidence_id": "callaway:fundamentals",
+            "annual_eps": 5.0,
+            "horizon_years": 3,
+            "future_price": 177.7853,
+            "present_value": 133.5727,
+            "currency": "USD",
+            "method": "EPS*(1+growth)^years*exit_PE/(1+required_return)^years",
+            "assumption_status": "model assumptions, not verified forecasts"
+          },
+          "warnings": [
+            "Simplified earnings multiple; no dividends, FX, or explicit dilution model.",
+            "Not a universal method: cyclical/negative-earnings firms may require abstention."
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "instrument": {
+        "key": "samsung",
+        "name": "Samsung Electronics",
+        "ticker": "005930.KS",
+        "currency": "KRW",
+        "timezone": "Asia/Seoul",
+        "close_hour": 15,
+        "close_minute": 30,
+        "identity_terms": [
+          "samsung"
+        ],
+        "topics": [
+          "Samsung memory HBM",
+          "semiconductor capacity supply"
+        ],
+        "related": [
+          "NVDA",
+          "MU",
+          "000660.KS"
+        ],
+        "note": ""
+      },
+      "snapshot": {
+        "id": "samsung:prices",
+        "kind": "prices",
+        "subject": "samsung",
+        "source": "FICTIONAL DEMO DATA",
+        "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+        "as_of": "2026-09-07",
+        "data": {
+          "close": 60000.0,
+          "session_date": "2026-09-07",
+          "change_pct": 0.0,
+          "change_basis": "fictional adjusted daily change",
+          "price_basis": "fictional completed daily close",
+          "currency": "KRW",
+          "age_days": 1,
+          "identity_verified": true,
+          "resolved_name": "FICTIONAL Samsung Electronics"
+        },
+        "warnings": [],
+        "error": null
+      },
+      "analysts": [
+        {
+          "role": "fundamental",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: compare earnings with cash after equipment spending before assuming growth benefits shareholders.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "samsung:prices",
+                  "samsung:fundamentals"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "samsung:fundamentals",
+            "samsung:prices"
+          ],
+          "error": null
+        },
+        {
+          "role": "news",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: the supplied demand headline sounds positive, but it does not establish higher margins or a share-price rise.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "samsung:news"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "samsung:news"
+          ],
+          "error": null
+        },
+        {
+          "role": "ecosystem",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: investigate whether capacity expansion and competing supply offset stronger demand. Related tickers remain research leads.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "samsung:ecosystem"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "samsung:ecosystem"
+          ],
+          "error": null
+        }
+      ],
+      "skeptic": {
+        "role": "skeptic",
+        "provider": "demo",
+        "model": "scripted-fiction",
+        "status": "complete",
+        "content": {
+          "summary": "FICTIONAL scripted approval: the software demonstrates a review gate; no real company thesis has been verified.",
+          "claims": [
+            {
+              "text": "This fixture provides invented figures and news for demonstrating the flow.",
+              "evidence_ids": [
+                "samsung:prices",
+                "samsung:fundamentals",
+                "samsung:news",
+                "samsung:ecosystem",
+                "samsung:valuation:21a942eca5"
+              ]
+            }
+          ],
+          "risks": [
+            "No real research was performed; never act on this example."
+          ],
+          "stance": "ABSTAIN",
+          "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+          "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+          "valuation_id": null,
+          "approved": true
+        },
+        "evidence_ids": [
+          "samsung:ecosystem",
+          "samsung:fundamentals",
+          "samsung:news",
+          "samsung:prices",
+          "samsung:valuation:21a942eca5"
+        ],
+        "error": null
+      },
+      "decision": {
+        "role": "decision",
+        "provider": "demo",
+        "model": "scripted-fiction",
+        "status": "complete",
+        "content": {
+          "summary": "FICTIONAL example: the stance below follows an assumed valuation, and changes if those assumptions fail.",
+          "claims": [
+            {
+              "text": "This fixture provides invented figures and news for demonstrating the flow.",
+              "evidence_ids": [
+                "samsung:prices",
+                "samsung:fundamentals",
+                "samsung:news",
+                "samsung:ecosystem",
+                "samsung:valuation:21a942eca5"
+              ]
+            }
+          ],
+          "risks": [
+            "No real research was performed; never act on this example."
+          ],
+          "stance": "HOLD",
+          "rationale": "DEMO HOLD: conditional present value is 80143.63 KRW under the stated growth, exit multiple and required return. This calculation is sensitive to its assumptions and excludes dividends/dilution.",
+          "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+          "valuation_id": "samsung:valuation:21a942eca5",
+          "approved": false
+        },
+        "evidence_ids": [
+          "samsung:ecosystem",
+          "samsung:fundamentals",
+          "samsung:news",
+          "samsung:prices",
+          "samsung:valuation:21a942eca5"
+        ],
+        "error": null
+      },
+      "published_action": "HOLD",
+      "blocks": [],
+      "evidence": [
+        {
+          "id": "samsung:prices",
+          "kind": "prices",
+          "subject": "samsung",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2026-09-07",
+          "data": {
+            "close": 60000.0,
+            "session_date": "2026-09-07",
+            "change_pct": 0.0,
+            "change_basis": "fictional adjusted daily change",
+            "price_basis": "fictional completed daily close",
+            "currency": "KRW",
+            "age_days": 1,
+            "identity_verified": true,
+            "resolved_name": "FICTIONAL Samsung Electronics"
+          },
+          "warnings": [],
+          "error": null
+        },
+        {
+          "id": "samsung:fundamentals",
+          "kind": "fundamentals",
+          "subject": "samsung",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2025-12-31",
+          "data": {
+            "period_end": "2025-12-31",
+            "period_type": "annual",
+            "currency": "KRW",
+            "revenue": 1000000.0,
+            "operating_income": 200000.0,
+            "net_income": 150000.0,
+            "diluted_eps": 3000.0,
+            "operating_cash_flow": 180000.0,
+            "capital_expenditure": -40000.0,
+            "source_grade": "invented teaching fixture"
+          },
+          "warnings": [
+            "Annual aggregator data; verify critical facts against original filings."
+          ],
+          "error": null
+        },
+        {
+          "id": "samsung:news",
+          "kind": "news",
+          "subject": "samsung",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {
+            "articles": [
+              {
+                "title": "FICTIONAL: Example demand and capacity update",
+                "summary": "Invented news to demonstrate the report format.",
+                "url": "https://example.com/fictional-news",
+                "published_at": "2026-09-07T21:33:45.745238+00:00",
+                "publisher": "Demo only",
+                "coverage": "fictional summary"
+              }
+            ],
+            "research_leads": [
+              "NVDA",
+              "MU",
+              "000660.KS"
+            ],
+            "relationship_status": "hypotheses, not verified contracts",
+            "query_errors": []
+          },
+          "warnings": [
+            "Headlines/summaries only; relevance and causality require review."
+          ],
+          "error": null
+        },
+        {
+          "id": "samsung:ecosystem",
+          "kind": "ecosystem",
+          "subject": "samsung",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {
+            "articles": [
+              {
+                "title": "FICTIONAL: Example demand and capacity update",
+                "summary": "Invented news to demonstrate the report format.",
+                "url": "https://example.com/fictional-news",
+                "published_at": "2026-09-07T21:33:45.745238+00:00",
+                "publisher": "Demo only",
+                "coverage": "fictional summary"
+              }
+            ],
+            "research_leads": [
+              "NVDA",
+              "MU",
+              "000660.KS"
+            ],
+            "relationship_status": "hypotheses, not verified contracts",
+            "query_errors": []
+          },
+          "warnings": [
+            "Headlines/summaries only; relevance and causality require review."
+          ],
+          "error": null
+        },
+        {
+          "id": "samsung:valuation:21a942eca5",
+          "kind": "valuation",
+          "subject": "samsung",
+          "source": "Python conditional calculation",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2025-12-31",
+          "data": {
+            "inputs": {
+              "annual_growth": 0.14,
+              "exit_pe": 24,
+              "required_return": 0.1,
+              "assumption_reason": "FICTIONAL teaching assumptions; not company forecasts."
+            },
+            "input_evidence_id": "samsung:fundamentals",
+            "annual_eps": 3000.0,
+            "horizon_years": 3,
+            "future_price": 106671.168,
+            "present_value": 80143.6273,
+            "currency": "KRW",
+            "method": "EPS*(1+growth)^years*exit_PE/(1+required_return)^years",
+            "assumption_status": "model assumptions, not verified forecasts"
+          },
+          "warnings": [
+            "Simplified earnings multiple; no dividends, FX, or explicit dilution model.",
+            "Not a universal method: cyclical/negative-earnings firms may require abstention."
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "instrument": {
+        "key": "nvidia",
+        "name": "NVIDIA",
+        "ticker": "NVDA",
+        "currency": "USD",
+        "timezone": "America/New_York",
+        "close_hour": 16,
+        "close_minute": 0,
+        "identity_terms": [
+          "nvidia"
+        ],
+        "topics": [
+          "NVIDIA supply chain",
+          "AI data center capital expenditure"
+        ],
+        "related": [
+          "TSM",
+          "MU",
+          "AVGO"
+        ],
+        "note": ""
+      },
+      "snapshot": {
+        "id": "nvidia:prices",
+        "kind": "prices",
+        "subject": "nvidia",
+        "source": "FICTIONAL DEMO DATA",
+        "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+        "as_of": "2026-09-07",
+        "data": {
+          "close": 100.0,
+          "session_date": "2026-09-07",
+          "change_pct": 0.0,
+          "change_basis": "fictional adjusted daily change",
+          "price_basis": "fictional completed daily close",
+          "currency": "USD",
+          "age_days": 0,
+          "identity_verified": true,
+          "resolved_name": "FICTIONAL NVIDIA"
+        },
+        "warnings": [],
+        "error": null
+      },
+      "analysts": [
+        {
+          "role": "fundamental",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: compare earnings with cash after equipment spending before assuming growth benefits shareholders.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "nvidia:prices",
+                  "nvidia:fundamentals"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "nvidia:fundamentals",
+            "nvidia:prices"
+          ],
+          "error": null
+        },
+        {
+          "role": "news",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: the supplied demand headline sounds positive, but it does not establish higher margins or a share-price rise.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "nvidia:news"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "nvidia:news"
+          ],
+          "error": null
+        },
+        {
+          "role": "ecosystem",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: investigate whether capacity expansion and competing supply offset stronger demand. Related tickers remain research leads.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "nvidia:ecosystem"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "nvidia:ecosystem"
+          ],
+          "error": null
+        }
+      ],
+      "skeptic": {
+        "role": "skeptic",
+        "provider": "demo",
+        "model": "scripted-fiction",
+        "status": "complete",
+        "content": {
+          "summary": "FICTIONAL scripted approval: the software demonstrates a review gate; no real company thesis has been verified.",
+          "claims": [
+            {
+              "text": "This fixture provides invented figures and news for demonstrating the flow.",
+              "evidence_ids": [
+                "nvidia:prices",
+                "nvidia:fundamentals",
+                "nvidia:news",
+                "nvidia:ecosystem",
+                "nvidia:valuation:21a942eca5"
+              ]
+            }
+          ],
+          "risks": [
+            "No real research was performed; never act on this example."
+          ],
+          "stance": "ABSTAIN",
+          "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+          "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+          "valuation_id": null,
+          "approved": true
+        },
+        "evidence_ids": [
+          "nvidia:ecosystem",
+          "nvidia:fundamentals",
+          "nvidia:news",
+          "nvidia:prices",
+          "nvidia:valuation:21a942eca5"
+        ],
+        "error": null
+      },
+      "decision": {
+        "role": "decision",
+        "provider": "demo",
+        "model": "scripted-fiction",
+        "status": "complete",
+        "content": {
+          "summary": "FICTIONAL example: the stance below follows an assumed valuation, and changes if those assumptions fail.",
+          "claims": [
+            {
+              "text": "This fixture provides invented figures and news for demonstrating the flow.",
+              "evidence_ids": [
+                "nvidia:prices",
+                "nvidia:fundamentals",
+                "nvidia:news",
+                "nvidia:ecosystem",
+                "nvidia:valuation:21a942eca5"
+              ]
+            }
+          ],
+          "risks": [
+            "No real research was performed; never act on this example."
+          ],
+          "stance": "HOLD",
+          "rationale": "DEMO HOLD: conditional present value is 133.57 USD under the stated growth, exit multiple and required return. This calculation is sensitive to its assumptions and excludes dividends/dilution.",
+          "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+          "valuation_id": "nvidia:valuation:21a942eca5",
+          "approved": false
+        },
+        "evidence_ids": [
+          "nvidia:ecosystem",
+          "nvidia:fundamentals",
+          "nvidia:news",
+          "nvidia:prices",
+          "nvidia:valuation:21a942eca5"
+        ],
+        "error": null
+      },
+      "published_action": "HOLD",
+      "blocks": [],
+      "evidence": [
+        {
+          "id": "nvidia:prices",
+          "kind": "prices",
+          "subject": "nvidia",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2026-09-07",
+          "data": {
+            "close": 100.0,
+            "session_date": "2026-09-07",
+            "change_pct": 0.0,
+            "change_basis": "fictional adjusted daily change",
+            "price_basis": "fictional completed daily close",
+            "currency": "USD",
+            "age_days": 0,
+            "identity_verified": true,
+            "resolved_name": "FICTIONAL NVIDIA"
+          },
+          "warnings": [],
+          "error": null
+        },
+        {
+          "id": "nvidia:fundamentals",
+          "kind": "fundamentals",
+          "subject": "nvidia",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2025-12-31",
+          "data": {
+            "period_end": "2025-12-31",
+            "period_type": "annual",
+            "currency": "USD",
+            "revenue": 1000000.0,
+            "operating_income": 200000.0,
+            "net_income": 150000.0,
+            "diluted_eps": 5.0,
+            "operating_cash_flow": 180000.0,
+            "capital_expenditure": -40000.0,
+            "source_grade": "invented teaching fixture"
+          },
+          "warnings": [
+            "Annual aggregator data; verify critical facts against original filings."
+          ],
+          "error": null
+        },
+        {
+          "id": "nvidia:news",
+          "kind": "news",
+          "subject": "nvidia",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {
+            "articles": [
+              {
+                "title": "FICTIONAL: Example demand and capacity update",
+                "summary": "Invented news to demonstrate the report format.",
+                "url": "https://example.com/fictional-news",
+                "published_at": "2026-09-07T21:33:45.745238+00:00",
+                "publisher": "Demo only",
+                "coverage": "fictional summary"
+              }
+            ],
+            "research_leads": [
+              "TSM",
+              "MU",
+              "AVGO"
+            ],
+            "relationship_status": "hypotheses, not verified contracts",
+            "query_errors": []
+          },
+          "warnings": [
+            "Headlines/summaries only; relevance and causality require review."
+          ],
+          "error": null
+        },
+        {
+          "id": "nvidia:ecosystem",
+          "kind": "ecosystem",
+          "subject": "nvidia",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {
+            "articles": [
+              {
+                "title": "FICTIONAL: Example demand and capacity update",
+                "summary": "Invented news to demonstrate the report format.",
+                "url": "https://example.com/fictional-news",
+                "published_at": "2026-09-07T21:33:45.745238+00:00",
+                "publisher": "Demo only",
+                "coverage": "fictional summary"
+              }
+            ],
+            "research_leads": [
+              "TSM",
+              "MU",
+              "AVGO"
+            ],
+            "relationship_status": "hypotheses, not verified contracts",
+            "query_errors": []
+          },
+          "warnings": [
+            "Headlines/summaries only; relevance and causality require review."
+          ],
+          "error": null
+        },
+        {
+          "id": "nvidia:valuation:21a942eca5",
+          "kind": "valuation",
+          "subject": "nvidia",
+          "source": "Python conditional calculation",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2025-12-31",
+          "data": {
+            "inputs": {
+              "annual_growth": 0.14,
+              "exit_pe": 24,
+              "required_return": 0.1,
+              "assumption_reason": "FICTIONAL teaching assumptions; not company forecasts."
+            },
+            "input_evidence_id": "nvidia:fundamentals",
+            "annual_eps": 5.0,
+            "horizon_years": 3,
+            "future_price": 177.7853,
+            "present_value": 133.5727,
+            "currency": "USD",
+            "method": "EPS*(1+growth)^years*exit_PE/(1+required_return)^years",
+            "assumption_status": "model assumptions, not verified forecasts"
+          },
+          "warnings": [
+            "Simplified earnings multiple; no dividends, FX, or explicit dilution model.",
+            "Not a universal method: cyclical/negative-earnings firms may require abstention."
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "instrument": {
+        "key": "alphabet",
+        "name": "Alphabet Class A",
+        "ticker": "GOOGL",
+        "currency": "USD",
+        "timezone": "America/New_York",
+        "close_hour": 16,
+        "close_minute": 0,
+        "identity_terms": [
+          "alphabet"
+        ],
+        "topics": [
+          "Google advertising AI search",
+          "Google cloud capital expenditure"
+        ],
+        "related": [
+          "NVDA",
+          "MSFT"
+        ],
+        "note": ""
+      },
+      "snapshot": {
+        "id": "alphabet:prices",
+        "kind": "prices",
+        "subject": "alphabet",
+        "source": "FICTIONAL DEMO DATA",
+        "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+        "as_of": "2026-09-07",
+        "data": {
+          "close": 100.0,
+          "session_date": "2026-09-07",
+          "change_pct": 0.0,
+          "change_basis": "fictional adjusted daily change",
+          "price_basis": "fictional completed daily close",
+          "currency": "USD",
+          "age_days": 0,
+          "identity_verified": true,
+          "resolved_name": "FICTIONAL Alphabet Class A"
+        },
+        "warnings": [],
+        "error": null
+      },
+      "analysts": [
+        {
+          "role": "fundamental",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: compare earnings with cash after equipment spending before assuming growth benefits shareholders.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "alphabet:prices",
+                  "alphabet:fundamentals"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "alphabet:fundamentals",
+            "alphabet:prices"
+          ],
+          "error": null
+        },
+        {
+          "role": "news",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: the supplied demand headline sounds positive, but it does not establish higher margins or a share-price rise.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "alphabet:news"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "alphabet:news"
+          ],
+          "error": null
+        },
+        {
+          "role": "ecosystem",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: investigate whether capacity expansion and competing supply offset stronger demand. Related tickers remain research leads.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "alphabet:ecosystem"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "alphabet:ecosystem"
+          ],
+          "error": null
+        }
+      ],
+      "skeptic": {
+        "role": "skeptic",
+        "provider": "demo",
+        "model": "scripted-fiction",
+        "status": "complete",
+        "content": {
+          "summary": "FICTIONAL scripted approval: the software demonstrates a review gate; no real company thesis has been verified.",
+          "claims": [
+            {
+              "text": "This fixture provides invented figures and news for demonstrating the flow.",
+              "evidence_ids": [
+                "alphabet:prices",
+                "alphabet:fundamentals",
+                "alphabet:news",
+                "alphabet:ecosystem",
+                "alphabet:valuation:21a942eca5"
+              ]
+            }
+          ],
+          "risks": [
+            "No real research was performed; never act on this example."
+          ],
+          "stance": "ABSTAIN",
+          "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+          "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+          "valuation_id": null,
+          "approved": true
+        },
+        "evidence_ids": [
+          "alphabet:ecosystem",
+          "alphabet:fundamentals",
+          "alphabet:news",
+          "alphabet:prices",
+          "alphabet:valuation:21a942eca5"
+        ],
+        "error": null
+      },
+      "decision": {
+        "role": "decision",
+        "provider": "demo",
+        "model": "scripted-fiction",
+        "status": "complete",
+        "content": {
+          "summary": "FICTIONAL example: the stance below follows an assumed valuation, and changes if those assumptions fail.",
+          "claims": [
+            {
+              "text": "This fixture provides invented figures and news for demonstrating the flow.",
+              "evidence_ids": [
+                "alphabet:prices",
+                "alphabet:fundamentals",
+                "alphabet:news",
+                "alphabet:ecosystem",
+                "alphabet:valuation:21a942eca5"
+              ]
+            }
+          ],
+          "risks": [
+            "No real research was performed; never act on this example."
+          ],
+          "stance": "HOLD",
+          "rationale": "DEMO HOLD: conditional present value is 133.57 USD under the stated growth, exit multiple and required return. This calculation is sensitive to its assumptions and excludes dividends/dilution.",
+          "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+          "valuation_id": "alphabet:valuation:21a942eca5",
+          "approved": false
+        },
+        "evidence_ids": [
+          "alphabet:ecosystem",
+          "alphabet:fundamentals",
+          "alphabet:news",
+          "alphabet:prices",
+          "alphabet:valuation:21a942eca5"
+        ],
+        "error": null
+      },
+      "published_action": "HOLD",
+      "blocks": [],
+      "evidence": [
+        {
+          "id": "alphabet:prices",
+          "kind": "prices",
+          "subject": "alphabet",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2026-09-07",
+          "data": {
+            "close": 100.0,
+            "session_date": "2026-09-07",
+            "change_pct": 0.0,
+            "change_basis": "fictional adjusted daily change",
+            "price_basis": "fictional completed daily close",
+            "currency": "USD",
+            "age_days": 0,
+            "identity_verified": true,
+            "resolved_name": "FICTIONAL Alphabet Class A"
+          },
+          "warnings": [],
+          "error": null
+        },
+        {
+          "id": "alphabet:fundamentals",
+          "kind": "fundamentals",
+          "subject": "alphabet",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2025-12-31",
+          "data": {
+            "period_end": "2025-12-31",
+            "period_type": "annual",
+            "currency": "USD",
+            "revenue": 1000000.0,
+            "operating_income": 200000.0,
+            "net_income": 150000.0,
+            "diluted_eps": 5.0,
+            "operating_cash_flow": 180000.0,
+            "capital_expenditure": -40000.0,
+            "source_grade": "invented teaching fixture"
+          },
+          "warnings": [
+            "Annual aggregator data; verify critical facts against original filings."
+          ],
+          "error": null
+        },
+        {
+          "id": "alphabet:news",
+          "kind": "news",
+          "subject": "alphabet",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {
+            "articles": [
+              {
+                "title": "FICTIONAL: Example demand and capacity update",
+                "summary": "Invented news to demonstrate the report format.",
+                "url": "https://example.com/fictional-news",
+                "published_at": "2026-09-07T21:33:45.745238+00:00",
+                "publisher": "Demo only",
+                "coverage": "fictional summary"
+              }
+            ],
+            "research_leads": [
+              "NVDA",
+              "MSFT"
+            ],
+            "relationship_status": "hypotheses, not verified contracts",
+            "query_errors": []
+          },
+          "warnings": [
+            "Headlines/summaries only; relevance and causality require review."
+          ],
+          "error": null
+        },
+        {
+          "id": "alphabet:ecosystem",
+          "kind": "ecosystem",
+          "subject": "alphabet",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {
+            "articles": [
+              {
+                "title": "FICTIONAL: Example demand and capacity update",
+                "summary": "Invented news to demonstrate the report format.",
+                "url": "https://example.com/fictional-news",
+                "published_at": "2026-09-07T21:33:45.745238+00:00",
+                "publisher": "Demo only",
+                "coverage": "fictional summary"
+              }
+            ],
+            "research_leads": [
+              "NVDA",
+              "MSFT"
+            ],
+            "relationship_status": "hypotheses, not verified contracts",
+            "query_errors": []
+          },
+          "warnings": [
+            "Headlines/summaries only; relevance and causality require review."
+          ],
+          "error": null
+        },
+        {
+          "id": "alphabet:valuation:21a942eca5",
+          "kind": "valuation",
+          "subject": "alphabet",
+          "source": "Python conditional calculation",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2025-12-31",
+          "data": {
+            "inputs": {
+              "annual_growth": 0.14,
+              "exit_pe": 24,
+              "required_return": 0.1,
+              "assumption_reason": "FICTIONAL teaching assumptions; not company forecasts."
+            },
+            "input_evidence_id": "alphabet:fundamentals",
+            "annual_eps": 5.0,
+            "horizon_years": 3,
+            "future_price": 177.7853,
+            "present_value": 133.5727,
+            "currency": "USD",
+            "method": "EPS*(1+growth)^years*exit_PE/(1+required_return)^years",
+            "assumption_status": "model assumptions, not verified forecasts"
+          },
+          "warnings": [
+            "Simplified earnings multiple; no dividends, FX, or explicit dilution model.",
+            "Not a universal method: cyclical/negative-earnings firms may require abstention."
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "instrument": {
+        "key": "apple",
+        "name": "Apple",
+        "ticker": "AAPL",
+        "currency": "USD",
+        "timezone": "America/New_York",
+        "close_hour": 16,
+        "close_minute": 0,
+        "identity_terms": [
+          "apple"
+        ],
+        "topics": [
+          "Apple iPhone demand",
+          "Apple supply chain"
+        ],
+        "related": [
+          "TSM",
+          "QCOM"
+        ],
+        "note": ""
+      },
+      "snapshot": {
+        "id": "apple:prices",
+        "kind": "prices",
+        "subject": "apple",
+        "source": "FICTIONAL DEMO DATA",
+        "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+        "as_of": "2026-09-07",
+        "data": {
+          "close": 100.0,
+          "session_date": "2026-09-07",
+          "change_pct": 0.0,
+          "change_basis": "fictional adjusted daily change",
+          "price_basis": "fictional completed daily close",
+          "currency": "USD",
+          "age_days": 0,
+          "identity_verified": true,
+          "resolved_name": "FICTIONAL Apple"
+        },
+        "warnings": [],
+        "error": null
+      },
+      "analysts": [
+        {
+          "role": "fundamental",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: compare earnings with cash after equipment spending before assuming growth benefits shareholders.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "apple:prices",
+                  "apple:fundamentals"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "apple:fundamentals",
+            "apple:prices"
+          ],
+          "error": null
+        },
+        {
+          "role": "news",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: the supplied demand headline sounds positive, but it does not establish higher margins or a share-price rise.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "apple:news"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "apple:news"
+          ],
+          "error": null
+        },
+        {
+          "role": "ecosystem",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: investigate whether capacity expansion and competing supply offset stronger demand. Related tickers remain research leads.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "apple:ecosystem"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "apple:ecosystem"
+          ],
+          "error": null
+        }
+      ],
+      "skeptic": {
+        "role": "skeptic",
+        "provider": "demo",
+        "model": "scripted-fiction",
+        "status": "complete",
+        "content": {
+          "summary": "FICTIONAL scripted approval: the software demonstrates a review gate; no real company thesis has been verified.",
+          "claims": [
+            {
+              "text": "This fixture provides invented figures and news for demonstrating the flow.",
+              "evidence_ids": [
+                "apple:prices",
+                "apple:fundamentals",
+                "apple:news",
+                "apple:ecosystem",
+                "apple:valuation:21a942eca5"
+              ]
+            }
+          ],
+          "risks": [
+            "No real research was performed; never act on this example."
+          ],
+          "stance": "ABSTAIN",
+          "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+          "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+          "valuation_id": null,
+          "approved": true
+        },
+        "evidence_ids": [
+          "apple:ecosystem",
+          "apple:fundamentals",
+          "apple:news",
+          "apple:prices",
+          "apple:valuation:21a942eca5"
+        ],
+        "error": null
+      },
+      "decision": {
+        "role": "decision",
+        "provider": "demo",
+        "model": "scripted-fiction",
+        "status": "complete",
+        "content": {
+          "summary": "FICTIONAL example: the stance below follows an assumed valuation, and changes if those assumptions fail.",
+          "claims": [
+            {
+              "text": "This fixture provides invented figures and news for demonstrating the flow.",
+              "evidence_ids": [
+                "apple:prices",
+                "apple:fundamentals",
+                "apple:news",
+                "apple:ecosystem",
+                "apple:valuation:21a942eca5"
+              ]
+            }
+          ],
+          "risks": [
+            "No real research was performed; never act on this example."
+          ],
+          "stance": "HOLD",
+          "rationale": "DEMO HOLD: conditional present value is 133.57 USD under the stated growth, exit multiple and required return. This calculation is sensitive to its assumptions and excludes dividends/dilution.",
+          "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+          "valuation_id": "apple:valuation:21a942eca5",
+          "approved": false
+        },
+        "evidence_ids": [
+          "apple:ecosystem",
+          "apple:fundamentals",
+          "apple:news",
+          "apple:prices",
+          "apple:valuation:21a942eca5"
+        ],
+        "error": null
+      },
+      "published_action": "HOLD",
+      "blocks": [],
+      "evidence": [
+        {
+          "id": "apple:prices",
+          "kind": "prices",
+          "subject": "apple",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2026-09-07",
+          "data": {
+            "close": 100.0,
+            "session_date": "2026-09-07",
+            "change_pct": 0.0,
+            "change_basis": "fictional adjusted daily change",
+            "price_basis": "fictional completed daily close",
+            "currency": "USD",
+            "age_days": 0,
+            "identity_verified": true,
+            "resolved_name": "FICTIONAL Apple"
+          },
+          "warnings": [],
+          "error": null
+        },
+        {
+          "id": "apple:fundamentals",
+          "kind": "fundamentals",
+          "subject": "apple",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2025-12-31",
+          "data": {
+            "period_end": "2025-12-31",
+            "period_type": "annual",
+            "currency": "USD",
+            "revenue": 1000000.0,
+            "operating_income": 200000.0,
+            "net_income": 150000.0,
+            "diluted_eps": 5.0,
+            "operating_cash_flow": 180000.0,
+            "capital_expenditure": -40000.0,
+            "source_grade": "invented teaching fixture"
+          },
+          "warnings": [
+            "Annual aggregator data; verify critical facts against original filings."
+          ],
+          "error": null
+        },
+        {
+          "id": "apple:news",
+          "kind": "news",
+          "subject": "apple",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {
+            "articles": [
+              {
+                "title": "FICTIONAL: Example demand and capacity update",
+                "summary": "Invented news to demonstrate the report format.",
+                "url": "https://example.com/fictional-news",
+                "published_at": "2026-09-07T21:33:45.745238+00:00",
+                "publisher": "Demo only",
+                "coverage": "fictional summary"
+              }
+            ],
+            "research_leads": [
+              "TSM",
+              "QCOM"
+            ],
+            "relationship_status": "hypotheses, not verified contracts",
+            "query_errors": []
+          },
+          "warnings": [
+            "Headlines/summaries only; relevance and causality require review."
+          ],
+          "error": null
+        },
+        {
+          "id": "apple:ecosystem",
+          "kind": "ecosystem",
+          "subject": "apple",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {
+            "articles": [
+              {
+                "title": "FICTIONAL: Example demand and capacity update",
+                "summary": "Invented news to demonstrate the report format.",
+                "url": "https://example.com/fictional-news",
+                "published_at": "2026-09-07T21:33:45.745238+00:00",
+                "publisher": "Demo only",
+                "coverage": "fictional summary"
+              }
+            ],
+            "research_leads": [
+              "TSM",
+              "QCOM"
+            ],
+            "relationship_status": "hypotheses, not verified contracts",
+            "query_errors": []
+          },
+          "warnings": [
+            "Headlines/summaries only; relevance and causality require review."
+          ],
+          "error": null
+        },
+        {
+          "id": "apple:valuation:21a942eca5",
+          "kind": "valuation",
+          "subject": "apple",
+          "source": "Python conditional calculation",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2025-12-31",
+          "data": {
+            "inputs": {
+              "annual_growth": 0.14,
+              "exit_pe": 24,
+              "required_return": 0.1,
+              "assumption_reason": "FICTIONAL teaching assumptions; not company forecasts."
+            },
+            "input_evidence_id": "apple:fundamentals",
+            "annual_eps": 5.0,
+            "horizon_years": 3,
+            "future_price": 177.7853,
+            "present_value": 133.5727,
+            "currency": "USD",
+            "method": "EPS*(1+growth)^years*exit_PE/(1+required_return)^years",
+            "assumption_status": "model assumptions, not verified forecasts"
+          },
+          "warnings": [
+            "Simplified earnings multiple; no dividends, FX, or explicit dilution model.",
+            "Not a universal method: cyclical/negative-earnings firms may require abstention."
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "instrument": {
+        "key": "adobe",
+        "name": "Adobe",
+        "ticker": "ADBE",
+        "currency": "USD",
+        "timezone": "America/New_York",
+        "close_hour": 16,
+        "close_minute": 0,
+        "identity_terms": [
+          "adobe"
+        ],
+        "topics": [
+          "Adobe creative subscriptions",
+          "generative AI creative software"
+        ],
+        "related": [
+          "MSFT"
+        ],
+        "note": ""
+      },
+      "snapshot": {
+        "id": "adobe:prices",
+        "kind": "prices",
+        "subject": "adobe",
+        "source": "FICTIONAL DEMO DATA",
+        "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+        "as_of": "2026-09-07",
+        "data": {
+          "close": 100.0,
+          "session_date": "2026-09-07",
+          "change_pct": 0.0,
+          "change_basis": "fictional adjusted daily change",
+          "price_basis": "fictional completed daily close",
+          "currency": "USD",
+          "age_days": 0,
+          "identity_verified": true,
+          "resolved_name": "FICTIONAL Adobe"
+        },
+        "warnings": [],
+        "error": null
+      },
+      "analysts": [
+        {
+          "role": "fundamental",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: compare earnings with cash after equipment spending before assuming growth benefits shareholders.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "adobe:prices",
+                  "adobe:fundamentals"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "adobe:fundamentals",
+            "adobe:prices"
+          ],
+          "error": null
+        },
+        {
+          "role": "news",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: the supplied demand headline sounds positive, but it does not establish higher margins or a share-price rise.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "adobe:news"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "adobe:news"
+          ],
+          "error": null
+        },
+        {
+          "role": "ecosystem",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: investigate whether capacity expansion and competing supply offset stronger demand. Related tickers remain research leads.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "adobe:ecosystem"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "adobe:ecosystem"
+          ],
+          "error": null
+        }
+      ],
+      "skeptic": {
+        "role": "skeptic",
+        "provider": "demo",
+        "model": "scripted-fiction",
+        "status": "complete",
+        "content": {
+          "summary": "FICTIONAL scripted approval: the software demonstrates a review gate; no real company thesis has been verified.",
+          "claims": [
+            {
+              "text": "This fixture provides invented figures and news for demonstrating the flow.",
+              "evidence_ids": [
+                "adobe:prices",
+                "adobe:fundamentals",
+                "adobe:news",
+                "adobe:ecosystem",
+                "adobe:valuation:21a942eca5"
+              ]
+            }
+          ],
+          "risks": [
+            "No real research was performed; never act on this example."
+          ],
+          "stance": "ABSTAIN",
+          "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+          "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+          "valuation_id": null,
+          "approved": true
+        },
+        "evidence_ids": [
+          "adobe:ecosystem",
+          "adobe:fundamentals",
+          "adobe:news",
+          "adobe:prices",
+          "adobe:valuation:21a942eca5"
+        ],
+        "error": null
+      },
+      "decision": {
+        "role": "decision",
+        "provider": "demo",
+        "model": "scripted-fiction",
+        "status": "complete",
+        "content": {
+          "summary": "FICTIONAL example: the stance below follows an assumed valuation, and changes if those assumptions fail.",
+          "claims": [
+            {
+              "text": "This fixture provides invented figures and news for demonstrating the flow.",
+              "evidence_ids": [
+                "adobe:prices",
+                "adobe:fundamentals",
+                "adobe:news",
+                "adobe:ecosystem",
+                "adobe:valuation:21a942eca5"
+              ]
+            }
+          ],
+          "risks": [
+            "No real research was performed; never act on this example."
+          ],
+          "stance": "HOLD",
+          "rationale": "DEMO HOLD: conditional present value is 133.57 USD under the stated growth, exit multiple and required return. This calculation is sensitive to its assumptions and excludes dividends/dilution.",
+          "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+          "valuation_id": "adobe:valuation:21a942eca5",
+          "approved": false
+        },
+        "evidence_ids": [
+          "adobe:ecosystem",
+          "adobe:fundamentals",
+          "adobe:news",
+          "adobe:prices",
+          "adobe:valuation:21a942eca5"
+        ],
+        "error": null
+      },
+      "published_action": "HOLD",
+      "blocks": [],
+      "evidence": [
+        {
+          "id": "adobe:prices",
+          "kind": "prices",
+          "subject": "adobe",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2026-09-07",
+          "data": {
+            "close": 100.0,
+            "session_date": "2026-09-07",
+            "change_pct": 0.0,
+            "change_basis": "fictional adjusted daily change",
+            "price_basis": "fictional completed daily close",
+            "currency": "USD",
+            "age_days": 0,
+            "identity_verified": true,
+            "resolved_name": "FICTIONAL Adobe"
+          },
+          "warnings": [],
+          "error": null
+        },
+        {
+          "id": "adobe:fundamentals",
+          "kind": "fundamentals",
+          "subject": "adobe",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2025-12-31",
+          "data": {
+            "period_end": "2025-12-31",
+            "period_type": "annual",
+            "currency": "USD",
+            "revenue": 1000000.0,
+            "operating_income": 200000.0,
+            "net_income": 150000.0,
+            "diluted_eps": 5.0,
+            "operating_cash_flow": 180000.0,
+            "capital_expenditure": -40000.0,
+            "source_grade": "invented teaching fixture"
+          },
+          "warnings": [
+            "Annual aggregator data; verify critical facts against original filings."
+          ],
+          "error": null
+        },
+        {
+          "id": "adobe:news",
+          "kind": "news",
+          "subject": "adobe",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {
+            "articles": [
+              {
+                "title": "FICTIONAL: Example demand and capacity update",
+                "summary": "Invented news to demonstrate the report format.",
+                "url": "https://example.com/fictional-news",
+                "published_at": "2026-09-07T21:33:45.745238+00:00",
+                "publisher": "Demo only",
+                "coverage": "fictional summary"
+              }
+            ],
+            "research_leads": [
+              "MSFT"
+            ],
+            "relationship_status": "hypotheses, not verified contracts",
+            "query_errors": []
+          },
+          "warnings": [
+            "Headlines/summaries only; relevance and causality require review."
+          ],
+          "error": null
+        },
+        {
+          "id": "adobe:ecosystem",
+          "kind": "ecosystem",
+          "subject": "adobe",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {
+            "articles": [
+              {
+                "title": "FICTIONAL: Example demand and capacity update",
+                "summary": "Invented news to demonstrate the report format.",
+                "url": "https://example.com/fictional-news",
+                "published_at": "2026-09-07T21:33:45.745238+00:00",
+                "publisher": "Demo only",
+                "coverage": "fictional summary"
+              }
+            ],
+            "research_leads": [
+              "MSFT"
+            ],
+            "relationship_status": "hypotheses, not verified contracts",
+            "query_errors": []
+          },
+          "warnings": [
+            "Headlines/summaries only; relevance and causality require review."
+          ],
+          "error": null
+        },
+        {
+          "id": "adobe:valuation:21a942eca5",
+          "kind": "valuation",
+          "subject": "adobe",
+          "source": "Python conditional calculation",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2025-12-31",
+          "data": {
+            "inputs": {
+              "annual_growth": 0.14,
+              "exit_pe": 24,
+              "required_return": 0.1,
+              "assumption_reason": "FICTIONAL teaching assumptions; not company forecasts."
+            },
+            "input_evidence_id": "adobe:fundamentals",
+            "annual_eps": 5.0,
+            "horizon_years": 3,
+            "future_price": 177.7853,
+            "present_value": 133.5727,
+            "currency": "USD",
+            "method": "EPS*(1+growth)^years*exit_PE/(1+required_return)^years",
+            "assumption_status": "model assumptions, not verified forecasts"
+          },
+          "warnings": [
+            "Simplified earnings multiple; no dividends, FX, or explicit dilution model.",
+            "Not a universal method: cyclical/negative-earnings firms may require abstention."
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "instrument": {
+        "key": "tesla",
+        "name": "Tesla",
+        "ticker": "TSLA",
+        "currency": "USD",
+        "timezone": "America/New_York",
+        "close_hour": 16,
+        "close_minute": 0,
+        "identity_terms": [
+          "tesla"
+        ],
+        "topics": [
+          "Tesla deliveries margins",
+          "electric vehicle battery pricing"
+        ],
+        "related": [
+          "1211.HK"
+        ],
+        "note": ""
+      },
+      "snapshot": {
+        "id": "tesla:prices",
+        "kind": "prices",
+        "subject": "tesla",
+        "source": "FICTIONAL DEMO DATA",
+        "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+        "as_of": "2026-09-07",
+        "data": {
+          "close": 100.0,
+          "session_date": "2026-09-07",
+          "change_pct": 0.0,
+          "change_basis": "fictional adjusted daily change",
+          "price_basis": "fictional completed daily close",
+          "currency": "USD",
+          "age_days": 0,
+          "identity_verified": true,
+          "resolved_name": "FICTIONAL Tesla"
+        },
+        "warnings": [],
+        "error": null
+      },
+      "analysts": [
+        {
+          "role": "fundamental",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: compare earnings with cash after equipment spending before assuming growth benefits shareholders.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "tesla:prices",
+                  "tesla:fundamentals"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "tesla:fundamentals",
+            "tesla:prices"
+          ],
+          "error": null
+        },
+        {
+          "role": "news",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: the supplied demand headline sounds positive, but it does not establish higher margins or a share-price rise.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "tesla:news"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "tesla:news"
+          ],
+          "error": null
+        },
+        {
+          "role": "ecosystem",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: investigate whether capacity expansion and competing supply offset stronger demand. Related tickers remain research leads.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "tesla:ecosystem"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "tesla:ecosystem"
+          ],
+          "error": null
+        }
+      ],
+      "skeptic": {
+        "role": "skeptic",
+        "provider": "demo",
+        "model": "scripted-fiction",
+        "status": "complete",
+        "content": {
+          "summary": "FICTIONAL scripted approval: the software demonstrates a review gate; no real company thesis has been verified.",
+          "claims": [
+            {
+              "text": "This fixture provides invented figures and news for demonstrating the flow.",
+              "evidence_ids": [
+                "tesla:prices",
+                "tesla:fundamentals",
+                "tesla:news",
+                "tesla:ecosystem",
+                "tesla:valuation:3fd4546e63"
+              ]
+            }
+          ],
+          "risks": [
+            "No real research was performed; never act on this example."
+          ],
+          "stance": "ABSTAIN",
+          "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+          "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+          "valuation_id": null,
+          "approved": true
+        },
+        "evidence_ids": [
+          "tesla:ecosystem",
+          "tesla:fundamentals",
+          "tesla:news",
+          "tesla:prices",
+          "tesla:valuation:3fd4546e63"
+        ],
+        "error": null
+      },
+      "decision": {
+        "role": "decision",
+        "provider": "demo",
+        "model": "scripted-fiction",
+        "status": "complete",
+        "content": {
+          "summary": "FICTIONAL example: the stance below follows an assumed valuation, and changes if those assumptions fail.",
+          "claims": [
+            {
+              "text": "This fixture provides invented figures and news for demonstrating the flow.",
+              "evidence_ids": [
+                "tesla:prices",
+                "tesla:fundamentals",
+                "tesla:news",
+                "tesla:ecosystem",
+                "tesla:valuation:3fd4546e63"
+              ]
+            }
+          ],
+          "risks": [
+            "No real research was performed; never act on this example."
+          ],
+          "stance": "SELL",
+          "rationale": "DEMO SELL: conditional present value is 45.08 USD under the stated growth, exit multiple and required return. This calculation is sensitive to its assumptions and excludes dividends/dilution.",
+          "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+          "valuation_id": "tesla:valuation:3fd4546e63",
+          "approved": false
+        },
+        "evidence_ids": [
+          "tesla:ecosystem",
+          "tesla:fundamentals",
+          "tesla:news",
+          "tesla:prices",
+          "tesla:valuation:3fd4546e63"
+        ],
+        "error": null
+      },
+      "published_action": "SELL",
+      "blocks": [],
+      "evidence": [
+        {
+          "id": "tesla:prices",
+          "kind": "prices",
+          "subject": "tesla",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2026-09-07",
+          "data": {
+            "close": 100.0,
+            "session_date": "2026-09-07",
+            "change_pct": 0.0,
+            "change_basis": "fictional adjusted daily change",
+            "price_basis": "fictional completed daily close",
+            "currency": "USD",
+            "age_days": 0,
+            "identity_verified": true,
+            "resolved_name": "FICTIONAL Tesla"
+          },
+          "warnings": [],
+          "error": null
+        },
+        {
+          "id": "tesla:fundamentals",
+          "kind": "fundamentals",
+          "subject": "tesla",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2025-12-31",
+          "data": {
+            "period_end": "2025-12-31",
+            "period_type": "annual",
+            "currency": "USD",
+            "revenue": 1000000.0,
+            "operating_income": 200000.0,
+            "net_income": 150000.0,
+            "diluted_eps": 5.0,
+            "operating_cash_flow": 180000.0,
+            "capital_expenditure": -40000.0,
+            "source_grade": "invented teaching fixture"
+          },
+          "warnings": [
+            "Annual aggregator data; verify critical facts against original filings."
+          ],
+          "error": null
+        },
+        {
+          "id": "tesla:news",
+          "kind": "news",
+          "subject": "tesla",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {
+            "articles": [
+              {
+                "title": "FICTIONAL: Example demand and capacity update",
+                "summary": "Invented news to demonstrate the report format.",
+                "url": "https://example.com/fictional-news",
+                "published_at": "2026-09-07T21:33:45.745238+00:00",
+                "publisher": "Demo only",
+                "coverage": "fictional summary"
+              }
+            ],
+            "research_leads": [
+              "1211.HK"
+            ],
+            "relationship_status": "hypotheses, not verified contracts",
+            "query_errors": []
+          },
+          "warnings": [
+            "Headlines/summaries only; relevance and causality require review."
+          ],
+          "error": null
+        },
+        {
+          "id": "tesla:ecosystem",
+          "kind": "ecosystem",
+          "subject": "tesla",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {
+            "articles": [
+              {
+                "title": "FICTIONAL: Example demand and capacity update",
+                "summary": "Invented news to demonstrate the report format.",
+                "url": "https://example.com/fictional-news",
+                "published_at": "2026-09-07T21:33:45.745238+00:00",
+                "publisher": "Demo only",
+                "coverage": "fictional summary"
+              }
+            ],
+            "research_leads": [
+              "1211.HK"
+            ],
+            "relationship_status": "hypotheses, not verified contracts",
+            "query_errors": []
+          },
+          "warnings": [
+            "Headlines/summaries only; relevance and causality require review."
+          ],
+          "error": null
+        },
+        {
+          "id": "tesla:valuation:3fd4546e63",
+          "kind": "valuation",
+          "subject": "tesla",
+          "source": "Python conditional calculation",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2025-12-31",
+          "data": {
+            "inputs": {
+              "annual_growth": 0.0,
+              "exit_pe": 12,
+              "required_return": 0.1,
+              "assumption_reason": "FICTIONAL teaching assumptions; not company forecasts."
+            },
+            "input_evidence_id": "tesla:fundamentals",
+            "annual_eps": 5.0,
+            "horizon_years": 3,
+            "future_price": 60.0,
+            "present_value": 45.0789,
+            "currency": "USD",
+            "method": "EPS*(1+growth)^years*exit_PE/(1+required_return)^years",
+            "assumption_status": "model assumptions, not verified forecasts"
+          },
+          "warnings": [
+            "Simplified earnings multiple; no dividends, FX, or explicit dilution model.",
+            "Not a universal method: cyclical/negative-earnings firms may require abstention."
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "instrument": {
+        "key": "spacex",
+        "name": "SpaceX",
+        "ticker": "SPCX",
+        "currency": "USD",
+        "timezone": "America/New_York",
+        "close_hour": 16,
+        "close_minute": 0,
+        "identity_terms": [
+          "space exploration",
+          "spacex"
+        ],
+        "topics": [
+          "SpaceX Starlink launch",
+          "satellite broadband competition"
+        ],
+        "related": [
+          "RKLB"
+        ],
+        "note": "June 2026 IPO announcement names SPCX. Require runtime equity/name match."
+      },
+      "snapshot": {
+        "id": "spacex:prices",
+        "kind": "prices",
+        "subject": "spacex",
+        "source": "FICTIONAL DEMO DATA",
+        "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+        "as_of": "2026-09-07",
+        "data": {
+          "close": 100.0,
+          "session_date": "2026-09-07",
+          "change_pct": 0.0,
+          "change_basis": "fictional adjusted daily change",
+          "price_basis": "fictional completed daily close",
+          "currency": "USD",
+          "age_days": 0,
+          "identity_verified": true,
+          "resolved_name": "FICTIONAL SpaceX"
+        },
+        "warnings": [],
+        "error": null
+      },
+      "analysts": [
+        {
+          "role": "fundamental",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: compare earnings with cash after equipment spending before assuming growth benefits shareholders.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "spacex:prices",
+                  "spacex:fundamentals"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "spacex:fundamentals",
+            "spacex:prices"
+          ],
+          "error": null
+        },
+        {
+          "role": "news",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: the supplied demand headline sounds positive, but it does not establish higher margins or a share-price rise.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "spacex:news"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "spacex:news"
+          ],
+          "error": null
+        },
+        {
+          "role": "ecosystem",
+          "provider": "demo",
+          "model": "scripted-fiction",
+          "status": "complete",
+          "content": {
+            "summary": "FICTIONAL example: investigate whether capacity expansion and competing supply offset stronger demand. Related tickers remain research leads.",
+            "claims": [
+              {
+                "text": "This fixture provides invented figures and news for demonstrating the flow.",
+                "evidence_ids": [
+                  "spacex:ecosystem"
+                ]
+              }
+            ],
+            "risks": [
+              "No real research was performed; never act on this example."
+            ],
+            "stance": "ABSTAIN",
+            "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+            "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+            "valuation_id": null,
+            "approved": false
+          },
+          "evidence_ids": [
+            "spacex:ecosystem"
+          ],
+          "error": null
+        }
+      ],
+      "skeptic": {
+        "role": "skeptic",
+        "provider": "demo",
+        "model": "scripted-fiction",
+        "status": "complete",
+        "content": {
+          "summary": "FICTIONAL scripted approval: the software demonstrates a review gate; no real company thesis has been verified.",
+          "claims": [
+            {
+              "text": "This fixture provides invented figures and news for demonstrating the flow.",
+              "evidence_ids": [
+                "spacex:prices",
+                "spacex:fundamentals",
+                "spacex:news",
+                "spacex:ecosystem",
+                "spacex:valuation:21a942eca5"
+              ]
+            }
+          ],
+          "risks": [
+            "No real research was performed; never act on this example."
+          ],
+          "stance": "ABSTAIN",
+          "rationale": "The next evidence to seek is realized pricing, cash conversion, and the timing of competing supply.",
+          "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+          "valuation_id": null,
+          "approved": true
+        },
+        "evidence_ids": [
+          "spacex:ecosystem",
+          "spacex:fundamentals",
+          "spacex:news",
+          "spacex:prices",
+          "spacex:valuation:21a942eca5"
+        ],
+        "error": null
+      },
+      "decision": {
+        "role": "decision",
+        "provider": "demo",
+        "model": "scripted-fiction",
+        "status": "complete",
+        "content": {
+          "summary": "FICTIONAL example: the stance below follows an assumed valuation, and changes if those assumptions fail.",
+          "claims": [
+            {
+              "text": "This fixture provides invented figures and news for demonstrating the flow.",
+              "evidence_ids": [
+                "spacex:prices",
+                "spacex:fundamentals",
+                "spacex:news",
+                "spacex:ecosystem",
+                "spacex:valuation:21a942eca5"
+              ]
+            }
+          ],
+          "risks": [
+            "No real research was performed; never act on this example."
+          ],
+          "stance": "HOLD",
+          "rationale": "DEMO HOLD: conditional present value is 133.57 USD under the stated growth, exit multiple and required return. This calculation is sensitive to its assumptions and excludes dividends/dilution.",
+          "invalidation": "In this fictional case, reassess if realized cash generation or pricing fails to support the assumed earnings growth. Verify real evidence before any action.",
+          "valuation_id": "spacex:valuation:21a942eca5",
+          "approved": false
+        },
+        "evidence_ids": [
+          "spacex:ecosystem",
+          "spacex:fundamentals",
+          "spacex:news",
+          "spacex:prices",
+          "spacex:valuation:21a942eca5"
+        ],
+        "error": null
+      },
+      "published_action": "HOLD",
+      "blocks": [],
+      "evidence": [
+        {
+          "id": "spacex:prices",
+          "kind": "prices",
+          "subject": "spacex",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2026-09-07",
+          "data": {
+            "close": 100.0,
+            "session_date": "2026-09-07",
+            "change_pct": 0.0,
+            "change_basis": "fictional adjusted daily change",
+            "price_basis": "fictional completed daily close",
+            "currency": "USD",
+            "age_days": 0,
+            "identity_verified": true,
+            "resolved_name": "FICTIONAL SpaceX"
+          },
+          "warnings": [],
+          "error": null
+        },
+        {
+          "id": "spacex:fundamentals",
+          "kind": "fundamentals",
+          "subject": "spacex",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2025-12-31",
+          "data": {
+            "period_end": "2025-12-31",
+            "period_type": "annual",
+            "currency": "USD",
+            "revenue": 1000000.0,
+            "operating_income": 200000.0,
+            "net_income": 150000.0,
+            "diluted_eps": 5.0,
+            "operating_cash_flow": 180000.0,
+            "capital_expenditure": -40000.0,
+            "source_grade": "invented teaching fixture"
+          },
+          "warnings": [
+            "Annual aggregator data; verify critical facts against original filings."
+          ],
+          "error": null
+        },
+        {
+          "id": "spacex:news",
+          "kind": "news",
+          "subject": "spacex",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {
+            "articles": [
+              {
+                "title": "FICTIONAL: Example demand and capacity update",
+                "summary": "Invented news to demonstrate the report format.",
+                "url": "https://example.com/fictional-news",
+                "published_at": "2026-09-07T21:33:45.745238+00:00",
+                "publisher": "Demo only",
+                "coverage": "fictional summary"
+              }
+            ],
+            "research_leads": [
+              "RKLB"
+            ],
+            "relationship_status": "hypotheses, not verified contracts",
+            "query_errors": []
+          },
+          "warnings": [
+            "Headlines/summaries only; relevance and causality require review."
+          ],
+          "error": null
+        },
+        {
+          "id": "spacex:ecosystem",
+          "kind": "ecosystem",
+          "subject": "spacex",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {
+            "articles": [
+              {
+                "title": "FICTIONAL: Example demand and capacity update",
+                "summary": "Invented news to demonstrate the report format.",
+                "url": "https://example.com/fictional-news",
+                "published_at": "2026-09-07T21:33:45.745238+00:00",
+                "publisher": "Demo only",
+                "coverage": "fictional summary"
+              }
+            ],
+            "research_leads": [
+              "RKLB"
+            ],
+            "relationship_status": "hypotheses, not verified contracts",
+            "query_errors": []
+          },
+          "warnings": [
+            "Headlines/summaries only; relevance and causality require review."
+          ],
+          "error": null
+        },
+        {
+          "id": "spacex:valuation:21a942eca5",
+          "kind": "valuation",
+          "subject": "spacex",
+          "source": "Python conditional calculation",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": "2025-12-31",
+          "data": {
+            "inputs": {
+              "annual_growth": 0.14,
+              "exit_pe": 24,
+              "required_return": 0.1,
+              "assumption_reason": "FICTIONAL teaching assumptions; not company forecasts."
+            },
+            "input_evidence_id": "spacex:fundamentals",
+            "annual_eps": 5.0,
+            "horizon_years": 3,
+            "future_price": 177.7853,
+            "present_value": 133.5727,
+            "currency": "USD",
+            "method": "EPS*(1+growth)^years*exit_PE/(1+required_return)^years",
+            "assumption_status": "model assumptions, not verified forecasts"
+          },
+          "warnings": [
+            "Simplified earnings multiple; no dividends, FX, or explicit dilution model.",
+            "Not a universal method: cyclical/negative-earnings firms may require abstention."
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "instrument": {
+        "key": "pga",
+        "name": "PGA TOUR / PGA TOUR Enterprises",
+        "ticker": null,
+        "currency": null,
+        "timezone": "America/New_York",
+        "close_hour": 16,
+        "close_minute": 0,
+        "identity_terms": [],
+        "topics": [
+          "PGA TOUR Enterprises"
+        ],
+        "related": [],
+        "note": "Context only: no direct listed equity configured; private commercial interests differ from the TOUR."
+      },
+      "snapshot": {
+        "id": "pga:prices",
+        "kind": "prices",
+        "subject": "pga",
+        "source": "FICTIONAL DEMO DATA",
+        "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+        "as_of": null,
+        "data": {},
+        "warnings": [],
+        "error": "Data unavailable (ValueError)"
+      },
+      "analysts": [],
+      "skeptic": {
+        "role": "skeptic",
+        "provider": "none",
+        "model": "none",
+        "status": "skipped",
+        "content": {},
+        "evidence_ids": [],
+        "error": null
+      },
+      "decision": {
+        "role": "decision",
+        "provider": "none",
+        "model": "none",
+        "status": "skipped",
+        "content": {},
+        "evidence_ids": [],
+        "error": null
+      },
+      "published_action": "CONTEXT ONLY",
+      "blocks": [
+        "Context only: no direct listed equity configured; private commercial interests differ from the TOUR."
+      ],
+      "evidence": [
+        {
+          "id": "pga:prices",
+          "kind": "prices",
+          "subject": "pga",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {},
+          "warnings": [],
+          "error": "Data unavailable (ValueError)"
+        },
+        {
+          "id": "pga:news",
+          "kind": "news",
+          "subject": "pga",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {
+            "articles": [
+              {
+                "title": "FICTIONAL: Example demand and capacity update",
+                "summary": "Invented news to demonstrate the report format.",
+                "url": "https://example.com/fictional-news",
+                "published_at": "2026-09-07T21:33:45.745238+00:00",
+                "publisher": "Demo only",
+                "coverage": "fictional summary"
+              }
+            ],
+            "research_leads": [],
+            "relationship_status": "hypotheses, not verified contracts",
+            "query_errors": []
+          },
+          "warnings": [
+            "Headlines/summaries only; relevance and causality require review."
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "instrument": {
+        "key": "liv",
+        "name": "LIV Golf",
+        "ticker": null,
+        "currency": null,
+        "timezone": "America/New_York",
+        "close_hour": 16,
+        "close_minute": 0,
+        "identity_terms": [],
+        "topics": [
+          "LIV Golf financing sponsors"
+        ],
+        "related": [],
+        "note": "Context only: no direct listed equity verified. Sponsorship does not imply ownership."
+      },
+      "snapshot": {
+        "id": "liv:prices",
+        "kind": "prices",
+        "subject": "liv",
+        "source": "FICTIONAL DEMO DATA",
+        "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+        "as_of": null,
+        "data": {},
+        "warnings": [],
+        "error": "Data unavailable (ValueError)"
+      },
+      "analysts": [],
+      "skeptic": {
+        "role": "skeptic",
+        "provider": "none",
+        "model": "none",
+        "status": "skipped",
+        "content": {},
+        "evidence_ids": [],
+        "error": null
+      },
+      "decision": {
+        "role": "decision",
+        "provider": "none",
+        "model": "none",
+        "status": "skipped",
+        "content": {},
+        "evidence_ids": [],
+        "error": null
+      },
+      "published_action": "CONTEXT ONLY",
+      "blocks": [
+        "Context only: no direct listed equity verified. Sponsorship does not imply ownership."
+      ],
+      "evidence": [
+        {
+          "id": "liv:prices",
+          "kind": "prices",
+          "subject": "liv",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {},
+          "warnings": [],
+          "error": "Data unavailable (ValueError)"
+        },
+        {
+          "id": "liv:news",
+          "kind": "news",
+          "subject": "liv",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {
+            "articles": [
+              {
+                "title": "FICTIONAL: Example demand and capacity update",
+                "summary": "Invented news to demonstrate the report format.",
+                "url": "https://example.com/fictional-news",
+                "published_at": "2026-09-07T21:33:45.745238+00:00",
+                "publisher": "Demo only",
+                "coverage": "fictional summary"
+              }
+            ],
+            "research_leads": [],
+            "relationship_status": "hypotheses, not verified contracts",
+            "query_errors": []
+          },
+          "warnings": [
+            "Headlines/summaries only; relevance and causality require review."
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "instrument": {
+        "key": "tgl",
+        "name": "TGL / TMRW Sports",
+        "ticker": null,
+        "currency": null,
+        "timezone": "America/New_York",
+        "close_hour": 16,
+        "close_minute": 0,
+        "identity_terms": [],
+        "topics": [
+          "TGL TMRW Sports"
+        ],
+        "related": [],
+        "note": "Context only: private investment/team interests; no direct listed equity configured."
+      },
+      "snapshot": {
+        "id": "tgl:prices",
+        "kind": "prices",
+        "subject": "tgl",
+        "source": "FICTIONAL DEMO DATA",
+        "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+        "as_of": null,
+        "data": {},
+        "warnings": [],
+        "error": "Data unavailable (ValueError)"
+      },
+      "analysts": [],
+      "skeptic": {
+        "role": "skeptic",
+        "provider": "none",
+        "model": "none",
+        "status": "skipped",
+        "content": {},
+        "evidence_ids": [],
+        "error": null
+      },
+      "decision": {
+        "role": "decision",
+        "provider": "none",
+        "model": "none",
+        "status": "skipped",
+        "content": {},
+        "evidence_ids": [],
+        "error": null
+      },
+      "published_action": "CONTEXT ONLY",
+      "blocks": [
+        "Context only: private investment/team interests; no direct listed equity configured."
+      ],
+      "evidence": [
+        {
+          "id": "tgl:prices",
+          "kind": "prices",
+          "subject": "tgl",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {},
+          "warnings": [],
+          "error": "Data unavailable (ValueError)"
+        },
+        {
+          "id": "tgl:news",
+          "kind": "news",
+          "subject": "tgl",
+          "source": "FICTIONAL DEMO DATA",
+          "retrieved_at": "2026-09-07T21:33:45.745238+00:00",
+          "as_of": null,
+          "data": {
+            "articles": [
+              {
+                "title": "FICTIONAL: Example demand and capacity update",
+                "summary": "Invented news to demonstrate the report format.",
+                "url": "https://example.com/fictional-news",
+                "published_at": "2026-09-07T21:33:45.745238+00:00",
+                "publisher": "Demo only",
+                "coverage": "fictional summary"
+              }
+            ],
+            "research_leads": [],
+            "relationship_status": "hypotheses, not verified contracts",
+            "query_errors": []
+          },
+          "warnings": [
+            "Headlines/summaries only; relevance and causality require review."
+          ],
+          "error": null
+        }
+      ]
+    }
+  ]
+}
