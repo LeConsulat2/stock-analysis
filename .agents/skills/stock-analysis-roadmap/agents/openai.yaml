@@ -1,0 +1,4 @@
+interface:
+  display_name: "Stock Analysis Roadmap"
+  short_description: "Choose practical milestones for personal research"
+  default_prompt: "Use $stock-analysis-roadmap to recommend the next useful milestone for my personal research workflow and explain the tradeoffs."

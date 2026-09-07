@@ -1,0 +1,4 @@
+interface:
+  display_name: "Stock Research"
+  short_description: "Research business economics and challenge a thesis"
+  default_prompt: "Use $stock-research to investigate this company with current evidence, valuation assumptions, and a skeptical thesis review."

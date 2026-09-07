@@ -4,4 +4,4 @@ __pycache__/
 *.py[cod]
 
 
-thepublic-example.txt
+*.txt

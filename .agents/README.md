@@ -1,6 +1,8 @@
 # Stock Analysis Agent Pack
 
 **Established:** 2026-08-20  
+**Research guidance extended:** 2026-09-08
+
 **Scope:** Repository-local operating guidance only; no application code is implemented here.
 
 This folder turns the repository's design intent into a repeatable way to plan, build, verify, and review the rebuild. It borrows the strongest habits from the Fable material—re-verify instead of inheriting, bind severity to a real gate, keep specialist lenses independent, preserve human rulings, and end with a bottom line—without copying product-specific vocabulary that does not belong in a stock-analysis CLI.
@@ -10,33 +12,44 @@ This folder turns the repository's design intent into a repeatable way to plan, 
 ```text
 .agents/
 |-- README.md
-|-- plans/rebuild-execution.md
+|-- plans/
+|   |-- rebuild-execution.md
+|   `-- personal-research-roadmap.md
 |-- commands/
 |   |-- plan-next-slice.md
 |   |-- implement-next-slice.md
 |   |-- review-current-change.md
-|   `-- qualify-workflow.md
+|   |-- qualify-workflow.md
+|   |-- research-company.md
+|   |-- challenge-thesis.md
+|   `-- plan-personal-workflow.md
 |-- agents/
 |   |-- architecture-reviewer.md
 |   |-- grounding-reviewer.md
 |   |-- provider-parity-reviewer.md
 |   |-- verification-reviewer.md
-|   `-- release-judge.md
+|   |-- release-judge.md
+|   |-- company-investigator.md
+|   `-- thesis-challenger.md
 `-- skills/
     |-- stock-analysis-rebuild/
-    `-- stock-analysis-review/
+    |-- stock-analysis-review/
+    |-- stock-analysis-roadmap/
+    `-- stock-research/
 ```
 
-The two pre-existing top-level reference skills under `.agents/database-design-reviewer/` and `.agents/snowflake-analytics-engineer/` were left untouched.
+The research additions support work in an assistant session. They do not implement new application agents, search tools, or portfolio features.
 
 ## Use It
 
 - Invoke `$stock-analysis-rebuild` for planning, implementation, modification, or diagnosis of the active rebuild.
 - Invoke `$stock-analysis-review` for a read-only review, report audit, provider-parity check, or readiness verdict.
+- Invoke `$stock-analysis-roadmap` for product direction, practical starting milestones, architecture tradeoffs, and growth planning.
+- Invoke `$stock-research` for a company thesis, a newsletter/video claim, or a dated research update with primary evidence and a skeptical challenge.
 - Use the command playbooks as saved starting prompts. Give the playbook a target when needed.
 - Treat `plans/rebuild-execution.md` as the dated execution and ruling ledger. Root `AGENTS.md` and `.claude/NewStart.md` remain the v1 product/architecture authorities.
 
-Codex normally detects skill changes automatically. If the new skills do not appear in the picker or via `$`, restart the Codex session once.
+The files are repository-local skill definitions. This documentation does not verify whether the current client has refreshed its skill picker; a saved playbook can also be supplied directly by path.
 
 Future models should load only the reference routed by the selected skill. Do not read every file in this pack for every task. The pack is designed so Luna or Terra can follow explicit contracts, failure cases, and proof gates without being asked to imitate a persona.
 
@@ -50,7 +63,7 @@ Verified against official Codex documentation on 2026-08-20:
 
 Re-check time-sensitive formats in the official [skills](https://learn.chatgpt.com/docs/build-skills), [subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents), and [developer commands](https://learn.chatgpt.com/docs/developer-commands) documentation before converting this pack.
 
-The user asked for all new material to remain inside `.agents`, so `agents/*.md` are honest, reusable **role cards**, and `commands/*.md` are **prompt playbooks**. `$stock-analysis-review` reads the role cards directly, so they are useful today. If native custom agents are wanted later, convert the cards into `.codex/agents/*.toml` in a separate, explicitly authorized change and re-check the current format first.
+This pack retains its existing `.agents` layout: `agents/*.md` are reusable **role cards**, and `commands/*.md` are **prompt playbooks**. The skills route to the relevant cards. These files do not register runtime agents or slash commands. A future conversion to native agent configuration should verify the then-current format and match the user's requested scope.
 
 ## Operating Principles
 
@@ -73,5 +86,6 @@ Use this order for different questions rather than pretending one document owns 
 - `CLAUDE.md`: repository and archive history;
 - `thoughts/codex-thoughts-at-start.md`: longer-term product thesis and unresolved ideas;
 - `.agents/plans/rebuild-execution.md`: implementation sequence, gates, and dated rulings.
+- `.agents/plans/personal-research-roadmap.md`: dated product recommendations and proposed later milestones; not an implementation authorization.
 
 When two sources genuinely conflict, surface the choice. Do not resolve it by quietly expanding scope.

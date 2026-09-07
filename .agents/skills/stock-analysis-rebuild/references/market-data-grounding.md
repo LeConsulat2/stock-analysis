@@ -17,6 +17,10 @@ Every claim-bearing tool payload should make the following recoverable, using co
 
 Unknown, unavailable, not applicable, and zero are different states. Preserve that distinction. An old but correctly cited value is still stale; a current value without units can still be misleading.
 
+Source provenance and claim support are separate checks. A source can be correctly cited while not supporting the sentence, and an official management forecast remains a forecast. Reposts of the same announcement are not independent corroboration. A tool-call requirement is necessary but insufficient: audit what the analyst inferred from its result.
+
+Do not infer subsidiary or segment economics from a parent ticker's consolidated data. User-supplied newsletters and transcripts provide research leads and attributed opinions; uncertain translations and hypothetical prices cannot become verified company facts. New source-fetching infrastructure remains subject to approved scope; if required evidence is unavailable, narrow the claim.
+
 ## Identity, Time, Currency, and Units
 
 - Confirm the returned instrument matches the requested Yahoo symbol. KRX suffixes are part of identity.

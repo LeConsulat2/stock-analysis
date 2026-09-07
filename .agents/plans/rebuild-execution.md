@@ -182,4 +182,6 @@ These may be valuable. Their absence is not a current defect.
 
 ## Next Action
 
+Product guidance added on 2026-09-08: [personal-research-roadmap.md](personal-research-roadmap.md) recommends a manually researched reference note and distinguishes engineering correctness from investment-research support. The new assistant research skills do not change P0-P5, add application modules, or qualify any live provider. The six production modules were still absent when inspected on this date.
+
 Use `.agents/commands/plan-next-slice.md` to re-check the tree and plan Phase 0 only. If Phase 0 has already landed, update this status and select the first incomplete gate rather than replaying the plan from memory.

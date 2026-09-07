@@ -42,6 +42,8 @@ Do not delegate unless the user explicitly asks for subagents or parallel agent 
 - An analyst must obtain relevant real tool evidence before making a factual market claim. A failed or empty tool result is a limitation, never permission to improvise.
 - Tool responses are compact and JSON-serializable. Unstable `yfinance` access returns a structured `{"error": ...}` payload instead of crashing the workflow.
 - The synthesizer may compare and reason over analyst outputs; it may not introduce new external facts or hide disagreement.
+- A successful tool call establishes data access, not support for every later sentence. Material claims must match the actual returned evidence; numerical calculations belong in deterministic tools. Prompt instructions alone do not prove these properties are enforced.
+- Agent roles and provider agreement are not independent evidence. Preserve originating sources and unresolved contradictions instead of turning agreement into a confidence score.
 - V1 orchestration is sequential. Local inference uses Ollama's OpenAI-compatible endpoint and an exact installed model tag confirmed at runtime.
 - Reports go to `reports/<TICKER>_analysis_<YYYYMMDD_HHMMSS>.md` and state that they support research rather than provide financial advice.
 

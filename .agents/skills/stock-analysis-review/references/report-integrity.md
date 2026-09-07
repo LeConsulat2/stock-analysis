@@ -24,6 +24,10 @@ A broken or missing link is a grounding finding. A citation-like label without r
 - Backtest results disclose no-look-ahead treatment, sample window, costs, benchmark, closed-trade count, and limitations.
 - Bull/base/bear cases have conditions and invalidation evidence rather than decorative percentage ranges.
 - Disagreement and missing evidence remain visible after synthesis.
+- A real citation supports the actual sentence, including its scope and degree of certainty. Management guidance is not rendered as achieved performance.
+- Sources repeating one announcement and models repeating one premise are not counted as independent corroboration.
+- Subsidiary or segment claims are not attached to a different issuer merely because its name is similar or it shares a parent.
+- Scenario plausibility is not described as a calibrated probability of profit; short-term performance does not establish predictive validity.
 - `nan`, `inf`, `None`, exception text, and tool-error payloads are not rendered as normal facts.
 - Recommendation horizon and invalidation conditions are present.
 - Numeric target, stop, and position size have a named method and inputs. Otherwise they are explicitly unavailable.

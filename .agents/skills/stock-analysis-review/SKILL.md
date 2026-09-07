@@ -35,6 +35,10 @@ Run the lenses yourself by default. If the user explicitly requests subagents an
 
 ## Evidence Rules
 
+Match the verdict to what was actually examined: tool-loop correctness, report factual support, and predictive performance are different claims. Passing one does not establish the others. Do not require new research infrastructure for v1, but do require a report to limit conclusions to the evidence it actually has.
+
+Check both provenance and whether the cited passage or tool value supports the claim. Several AI roles agreeing on one source do not provide independent corroboration. Separate a validated citation's existence from support for the inference it accompanies.
+
 Every finding must contain:
 
 - a stable ID;
