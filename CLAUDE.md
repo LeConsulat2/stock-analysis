@@ -2,6 +2,9 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+**Start every session with [`.agents/plans/start-here.md`](.agents/plans/start-here.md)**: the owner's current
+plan, what exists, and the next step in order. It supersedes the status claims below where they disagree.
+
 ## Repository overview
 
 This is a personal research repo, not a packaged app or library. It explores building an AI multi-agent stock
@@ -24,6 +27,11 @@ highs/lows, earnings within 7 days), shows NZD-converted returns (the user is NZ
 the day", and saves HTML to `reports/briefs/` (gitignored). `python brief.py --send` emails it via Gmail SMTP
 using `GMAIL_ADDRESS`/`GMAIL_APP_PASSWORD` from `.env` (template: `.env.example`). Output is in English.
 Offline tests: `python -m unittest tests.test_brief`.
+
+**`full-flow/` (added 2026-09-08 on another machine).** A self-contained AI research desk with its own venv
+(`full-flow/.venv`), watchlist (`full-flow/watchlist.py`), five model roles, a valuation/publication gate, and
+Task Scheduler scripts. Demo + offline tests pass; it has not been run on live data or paid models. See
+`full-flow/README.md`. How it relates to `brief.py` and the rebuild is laid out in the start-here plan.
 
 ## Setup & running
 

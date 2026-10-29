@@ -80,6 +80,8 @@ This pack retains its existing `.agents` layout: `agents/*.md` are reusable **ro
 
 Use this order for different questions rather than pretending one document owns everything:
 
+- `.agents/plans/start-here.md`: the owner's current plan and next step (read first; updated 2026-10-29);
+
 - root `AGENTS.md`: current contributor constraints;
 - `.claude/NewStart.md`: approved v1 technical design;
 - current code/tests/tool traces: present implementation behavior;
