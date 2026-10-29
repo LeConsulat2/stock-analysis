@@ -1,0 +1,15 @@
+# Your watchlist for brief.py. Lines starting with # are ignored.
+# why      = one sentence on why you watch or own it (what has to be true for it to do well)
+# wrong_if = what would make you admit you were wrong (a reason, not a price)
+# Wrap any text that contains a comma in "double quotes".
+ticker,name,why,wrong_if
+GOOGL,Alphabet,,
+005930.KS,Samsung Electronics,,
+AAPL,Apple,,
+KO,Coca-Cola,,
+081660.KS,Misto Holdings (FILA),,
+GOLF,Acushnet,,
+TSLA,Tesla,,
+NVDA,Nvidia,,
+VOO,S&P 500 ETF (VOO),,
+000660.KS,SK Hynix,,

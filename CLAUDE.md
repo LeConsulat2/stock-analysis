@@ -17,6 +17,14 @@ source of truth for the rebuild. As of now the rebuild is **planning only** — 
 entry point for the new design. `archive/o3-final.py` is the last known-working script, but see the
 requirements-mismatch note below before trying to run it.
 
+**Daily brief (working, separate from the rebuild).** `brief.py` is the user's actual day-to-day tool: it reads
+`watchlist.csv` (the user's real watchlist — deliberately different from the rebuild's default roster), pulls a
+year of prices + FX via yfinance, flags only unusual events (moves vs. each stock's own typical move, new 1-year
+highs/lows, earnings within 7 days), shows NZD-converted returns (the user is NZ-based), rotates a "concept of
+the day", and saves HTML to `reports/briefs/` (gitignored). `python brief.py --send` emails it via Gmail SMTP
+using `GMAIL_ADDRESS`/`GMAIL_APP_PASSWORD` from `.env` (template: `.env.example`). Output is in English.
+Offline tests: `python -m unittest tests.test_brief`.
+
 ## Setup & running
 
 - Python 3.13 venv already exists at `env/` (Windows: `env\Scripts\activate`).

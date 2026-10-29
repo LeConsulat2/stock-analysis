@@ -5,3 +5,6 @@ __pycache__/
 
 
 *.txt
+
+# Daily briefs from brief.py (personal output)
+reports/briefs/
